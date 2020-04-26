@@ -100,7 +100,7 @@ p {
 	maring-top: 0;
 	margin-bottom: 1rem;
 }
-.foot:link:hover {
+.foot:hover {
 	text-decoration: underline;	
 }
 
