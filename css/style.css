@@ -34,7 +34,11 @@ header {
 footer {
 	padding-top: 20px;
 	text-align: center;
+	
 }
+
+footer:hover { color: pink; }
+
 .projects {
 	padding-left: 50px;
 	padding-right: 50px;
