@@ -101,6 +101,7 @@ p {
 	margin-bottom: 1rem;
 }
 .foot:hover {
+	display:inline;
 	text-decoration: underline;	
 }
 
