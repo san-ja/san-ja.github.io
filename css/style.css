@@ -37,7 +37,7 @@ footer {
 	
 }
 
-.footer:hover { color: pink; }
+ :link { color: pink; }
 
 .projects {
 	padding-left: 50px;
