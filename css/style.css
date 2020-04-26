@@ -23,9 +23,6 @@
   box-sizing: border-box;
 }
 
-p:link:hover {
-	text-decoration: underline;
-}
 
 header {
 	padding-top: 100px;
@@ -103,6 +100,10 @@ p {
 	maring-top: 0;
 	margin-bottom: 1rem;
 }
+.foot:hover {
+	text-decoration: underline;	
+}
+
 
 b, strong {
 	font-weight: bolder;
