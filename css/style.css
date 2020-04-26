@@ -52,8 +52,6 @@ footer {
   }
 
 .focus:hover {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
   animation-name: focus;
   animation-duration: 0.15s;
   border-left: 8px solid #ff8833;
