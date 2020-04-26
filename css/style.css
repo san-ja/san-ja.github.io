@@ -100,9 +100,13 @@ p {
 	maring-top: 0;
 	margin-bottom: 1rem;
 }
-.foot:hover {
+.foot1:hover {
 	display:inline;
 	text-decoration: underline;	
+}
+
+.foot2:hover {
+	display:inline;
 }
 
 
