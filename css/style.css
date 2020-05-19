@@ -117,11 +117,10 @@ body{
 	color: #000000;
 	text-align: left;
 	background-color: #FFFFFF;
-	background-padding: ;
 	background-size: cover;
   	background: url("Background.png");
 	background-repeat: no-repeat;
-	background-position: top;
+	background-position: center;
 	background-attachment: fixed;
 }
 
