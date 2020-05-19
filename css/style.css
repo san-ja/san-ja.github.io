@@ -92,7 +92,7 @@ footer {
 	width:50%;
 	height: 100%;
 	margin-bottom: 20px;
-	
+	float:left;
 }
 
 .block {
