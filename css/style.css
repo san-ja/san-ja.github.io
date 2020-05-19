@@ -13,7 +13,7 @@
 	--info: #;
 	--light: #;
 	--dark: #;
-	
+
  	--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -35,7 +35,7 @@ header {
 footer {
 	padding-top: 20px;
 	text-align: center;
-	
+
 }
 
 
@@ -69,7 +69,7 @@ footer {
 .card-arrangement {
 	padding-left: 40px;
 	padding-right: 40px;
-	
+
 }
 .content {
 	width:50%;
@@ -89,19 +89,21 @@ html {
 	line-height: 1.2;
 	-webkit-text-size-adjust:100%;
 	-webkit-tap-highlight-color: rgba(255, 136, 51);
-	
+
 }
 
 body{
 	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-size: 1rem;
-	
 	font-weight: 400;
 	line-height: 1;
 	color: #000000;
 	text-align: left;
 	background-color: #FFFFFF;
 	background-size: cover;
+	background-color: #fff;
+  background: url("Background.png") no-repeat top center scroll;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -112,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	margin-top: 1.5rem;	
+	margin-top: 1.5rem;
 }
 
 p {
@@ -120,7 +122,7 @@ p {
 	margin-bottom: 1rem;
 }
 .foot1 {
-	display:inline;	
+	display:inline;
 }
 
 .foot1:hover {
@@ -168,7 +170,7 @@ img {
 
 projects {
 	width:100%
-	
+
 }
 
 table {
@@ -398,4 +400,3 @@ pre {
   h3 {
     page-break-after: avoid;
   }
-
