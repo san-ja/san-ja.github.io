@@ -101,10 +101,10 @@ body{
 	color: #000000;
 	text-align: left;
 	background-color: #FFFFFF;
-	background-size: cover;
+	background-size: 100%;
 	background-color: #fff;
   	background: url("Background.png");
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
 }
