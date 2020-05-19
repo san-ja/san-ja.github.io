@@ -49,6 +49,7 @@ footer {
 	padding-right: 20px;
 	margin-bottom: 100px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	background-color: #fff;
   }
 
 .focus:hover {
@@ -103,6 +104,10 @@ body{
 	background-size: cover;
 	background-color: #fff;
   	background: url("Background.png") no-repeat top center scroll;
+	 -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	-o-background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
