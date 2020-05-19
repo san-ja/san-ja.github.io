@@ -103,11 +103,10 @@ body{
 	background-color: #FFFFFF;
 	background-size: cover;
 	background-color: #fff;
-  	background: url("Background.png") repeat center scroll;
-	 -webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	background-size: cover;
-  	-o-background-size: cover;
+  	background: url("Background.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
