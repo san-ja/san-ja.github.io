@@ -86,7 +86,7 @@ footer {
 .card-arrangement {
 	padding-left: 40px;
 	padding-right: 40px;
-	
+	overflow:auto;
 }
 .content {
 	width:50%;
