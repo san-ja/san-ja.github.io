@@ -95,13 +95,14 @@ html {
 body{
 	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-size: 1rem;
-	
 	font-weight: 400;
 	line-height: 1;
 	color: #000000;
 	text-align: left;
 	background-color: #FFFFFF;
 	background-size: cover;
+	background-color: #fff;
+  	background: url("Background.png") no-repeat top center scroll;
 }
 
 h1, h2, h3, h4, h5, h6 {
