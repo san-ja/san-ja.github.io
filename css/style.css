@@ -50,7 +50,7 @@ header a.logo {
 footer {
 	padding-top: 20px;
 	text-align: center;
-	
+	clear: left;
 }
 
 .projects {
