@@ -34,7 +34,6 @@ header {
 top {
 	top: 0;
 	left: 0;
-	
 }
 
 top a {
@@ -114,14 +113,10 @@ body{
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1;
-	color: #000000;
+	color: #fff;
 	text-align: left;
-	background-color: #FFFFFF;
+	background-color: #000;
 	background-size: cover;
-  	background: url("Background.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
