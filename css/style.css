@@ -91,13 +91,14 @@ footer {
 	width:50%;
 	height: auto;
 	margin-bottom: 20px;
-	display: inline-block;
+	float:left;
 }
 
 .block {
 	width: 50%;
 	heigh: auto;
-	display: inline-block;
+	margin-bottom:20px;
+	float:right;
 }
 
 html {
