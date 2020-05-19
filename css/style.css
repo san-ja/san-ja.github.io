@@ -103,7 +103,7 @@ body{
 	background-color: #FFFFFF;
 	background-size: cover;
 	background-color: #fff;
-  	background: url("Background.png") no-repeat top center scroll;
+  	background: url("Background.png") repeat center scroll;
 	 -webkit-background-size: cover;
   	-moz-background-size: cover;
   	background-size: cover;
