@@ -47,6 +47,26 @@ header a.logo {
 	
 }	
 
+.expand {
+	position:relative;
+	display: inline-block;
+}
+
+.expand-content {
+	display:none;
+	position: absolute;
+	background-color: #f3f3f3;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	x-index: 1;
+}
+
+.expand:hover .expand-content {
+	display:block;
+}
+	
+
 footer {
 	padding-top: 20px;
 	text-align: center;
