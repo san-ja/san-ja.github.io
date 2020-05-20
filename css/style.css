@@ -54,11 +54,10 @@ header a.logo {
 
 .expand-content {
 	display:none;
-	left: 60px;
 	position: absolute;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	padding: 8px 8px;
-	x-index: 10;
+	padding: 1px 1px;
+	z-index:1;
 }
 
 .expand:hover .expand-content {
