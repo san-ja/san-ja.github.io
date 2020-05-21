@@ -60,10 +60,25 @@ header a.logo {
 	z-index:1;
 }
 
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.fa-linkedin {
+	color: #000;
+}
+
+.fa-envelope {
+	color: #000;
+}
+
 .expand:hover .expand-content {
 	display:block;
 }
-	
 
 footer {
 	padding-top: 20px;
