@@ -46,16 +46,16 @@ header a.logo {
 }	
 
 .expand {
-	position:relative;
+	position: relative;
 	display: inline-block;
 }
 
 .expand-content {
-	display:none;
+	display: none;
 	position: absolute;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	padding: 1px 1px;
-	z-index:1;
+	z-index: 1;
+	top: 70px;
 }
 
 .fa {
