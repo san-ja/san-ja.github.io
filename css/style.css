@@ -53,15 +53,13 @@ header a.logo {
 .expand-content {
 	display: none;
 	position: absolute;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 	top: 70px;
 }
 
 .fa {
 	padding: 20px;
-	font-size: 30px;
-	text-align: center;
 	text-decoration: none;
 }
 
@@ -137,7 +135,6 @@ html {
 	line-height: 1.2;
 	-webkit-text-size-adjust:100%;
 	-webkit-tap-highlight-color: rgba(255, 136, 51);
-	
 }
 
 body {
@@ -215,7 +212,6 @@ img {
 
 projects {
 	width:100%
-	
 }
 
 table {
