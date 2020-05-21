@@ -68,11 +68,13 @@ header a.logo {
 
 .fa-linkedin {
 	color: #000;
+	width: 50px;
 	
 }
 
 .fa-envelope {
 	color: #000;
+	width: 50px;
 }
 
 .expand:hover .expand-content {
