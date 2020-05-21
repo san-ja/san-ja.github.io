@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+
 :root {
 	--blue: #;
 	--green: #;
@@ -23,7 +24,7 @@
   box-sizing: border-box;
 }
 
-
+/* Greeting */
 header {
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -31,6 +32,7 @@ header {
 	font-size: 1.5rem;
 }
 
+/* Logo and icons */
 top {
 	top: 0px;
 	left: 0px;
@@ -45,6 +47,7 @@ header a.logo {
 	size: 100px;
 }	
 
+/* mail and linkedin icons */
 .expand {
 	position: relative;
 	display: inline-block;
@@ -83,12 +86,14 @@ header a.logo {
 	display:block;
 }
 
+/* footer at bottom of page */
 footer {
 	padding-top: 20px;
 	text-align: center;
 	clear: left;
 }
 
+/* main body*/
 .projects {
 	padding-left: 50px;
 	padding-right: 50px;
@@ -111,6 +116,7 @@ footer {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+*/ focus effect */
 @keyframes focus {
     0%   {border-left: 2px solid #ffffff;}
     25%  {border-left: 3px solid #fff3ea;}
@@ -124,6 +130,7 @@ footer {
 	padding-right: 40px;
 	overflow:auto;
 }
+/* Project Details: Purpose, Tools/Software, Team  */
 .content {
 	width:50%;
 	height: 100%;
@@ -131,6 +138,7 @@ footer {
 	float: left;
 }
 
+/* "More Details:" */
 .block {
 	width: 30%;
 	heigh: 100%;
@@ -138,6 +146,7 @@ footer {
 	float: right;
 }
 
+/* TEXT CUSTOMIZATIONS */
 html {
 	font-family: 'Helvetica Neue', Helvetica, Arian, 'sans-serif';
 	line-height: 1.2;
@@ -171,6 +180,8 @@ p {
 	maring-top: 0;
 	margin-bottom: 1rem;
 }
+
+/* footer text arrangement */
 .foot1 {
 	display:inline;	
 }
@@ -198,6 +209,7 @@ a {
 	background-color: transparent;
 }
 
+/* for Code Insertions */
 pre, code, kbd, samp {
 	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   	font-size: 1em;
@@ -263,6 +275,7 @@ h6 {
 	font-size: 1rem;
 }
 
+/* highlight effect */
 mark, .mark {
 	padding: 0.1rem;
 	background-color: #ff8833;
@@ -307,6 +320,7 @@ pre {
   margin-left: auto;
 }
 
+/* RESPONSIVE */
 
 @media (min-width: 576px) {
   .container {
