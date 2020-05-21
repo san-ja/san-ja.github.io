@@ -61,13 +61,14 @@ header a.logo {
 }
 
 .fa {
-	padding-left:10px;
-	width: 50px;
+
+	width: 0px;
 	text-decoration: none;
 }
 
 .fa-linkedin {
 	color: #000;
+	
 }
 
 .fa-envelope {
