@@ -75,11 +75,15 @@ header a.logo {
 	color: #000;
 	padding: 0px;
 	padding-bottom:10px;
+	width: 100px;
+	height: auto;
 }
 
 .fa-envelope {
 	color: #000;
 	padding: 0px;
+	width: 100px;
+	height: auto;
 }
 
 .expand:hover .expand-content {
