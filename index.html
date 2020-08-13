@@ -14,6 +14,9 @@
 
       // Set a callback to run when the Google Visualization API is loaded.
       google.charts.setOnLoadCallback(drawChartCrewChanges);
+	  google.charts.setOnLoadCallback(drawChartMissedRelieves);
+	  google.charts.setOnLoadCallback(drawChartOfficerExperience);
+	  google.charts.setOnLoadCallback(drawChartRetention);
 
       // Callback that creates and populates a data table, 
       // instantiates the pie chart, passes in the data and
@@ -41,8 +44,77 @@
       var chart = new google.visualization.ColumnChart(document.getElementById('crew-changes'));
       chart.draw(data, options);
     }
-		
-	
+	  function drawChartMissedRelieves() {
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Month');
+      data.addColumn('number', '# Missed Relieves');
+      data.addRows([
+        ['September', 10],
+        ['October', 24],
+        ['November', 5],
+        ['December', 6],
+        ['January', 16]
+      ]);
+
+      // Set chart options
+      var options = {'title':'Missed Relieves',
+                     'width':400,
+                     'height':300};
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.ColumnChart(document.getElementById('missed-relieves'));
+      chart.draw(data, options);
+		 
+    }
+	  function drawChartOfficerExperience() {
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Officer');
+      data.addColumn('number', 'Officer Experience');
+      data.addRows([
+        ['A', 10],
+        ['B', 24],
+        ['C', 5],
+        ['D', 6],
+        ['E', 16]
+      ]);
+
+      // Set chart options
+      var options = {'title':'Officer Experience',
+                     'width':400,
+                     'height':300};
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.ColumnChart(document.getElementById('officer-experience'));
+      chart.draw(data, options);
+		 
+    }
+	  function drawChartRetention() {
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Rank');
+      data.addColumn('number', '%');
+      data.addRows([
+        ['2nd Engineer', 96],
+        ['3rd Engineer', 80],
+        ['4th Engineer', 75],
+        ['Engine Cadet', 24],
+      ]);
+
+      // Set chart options
+      var options = {'title':'Retention',
+                     'width':400,
+                     'height':300};
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.ColumnChart(document.getElementById('retention'));
+      chart.draw(data, options);
+		 
+    }
     </script>
 	
 </head>
@@ -67,9 +139,9 @@
 			
 			<div class="nav-row">
 				<div id="planning" class="category" style="display:none;">
-					<button class="chart-button" onclick="openChart()">Crew Changes</button>
-					<button class="chart-button" onclick="openChart()">Missed Relieves</button>
-					<button class="chart-button" onclick="openChart()">Officer Experience</button>
+					<button class="chart-button" onclick="openChart('crew-changes')">Crew Changes</button>
+					<button class="chart-button" onclick="openChart('missed-relieves')">Missed Relieves</button>
+					<button class="chart-button" onclick="openChart('officer-experience')">Officer Experience</button>
 				</div>
 				
 				<div id="performance" class="category" style="display:none;">
@@ -79,9 +151,9 @@
 				</div>
 				
 				<div id="development" class="category" style="display:none;">
-					<button class="chart-button" onclick="openChart()">Retention</button>
-					<button class="chart-button" onclick="openChart()">Cadets per vessel</button>
-					<button class="chart-button" onclick="openChart()">Seafarer NPS</button>
+					<button class="chart-button" onclick="openChart('retention')">Retention</button>
+					<button class="chart-button" onclick="openChart('cadets-per-vessel')">Cadets per vessel</button>
+					<button class="chart-button" onclick="openChart('seafarer-nps')">Seafarer NPS</button>
 				</div>
 				
 				<div id="efficiency" class="category" style="display:none;">
