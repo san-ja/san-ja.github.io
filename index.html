@@ -8,7 +8,16 @@
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     
 	<script type="text/javascript">
-
+		
+	  function openChart(chartName){
+		  var i;
+	  	  var x = document.getElementsByClassName("chart");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+	  	  document.getElementById(chartName).style.display = "block";  
+	}
+		  
       // Load the Visualization API and the piechart package.
       google.charts.load('current', {'packages':['corechart']});
 
@@ -171,13 +180,13 @@
 					<button class="mode-button" onclick="openCategory('efficiency')">Efficiency</button>
 				</div>
 				<div class="chartspace">
-					<div id="crew-changes"></div>
-					<div id="missed-relieves"></div>
-					<div id="officer-experience"></div>
-					<div id="retention"></div>
-					<div id="cadets-per-vessel"></div>
-					<div id="seafarer-nps"></div>
-					<div id="general"></div>
+					<div class="chart" id="crew-changes" style="display:none;"></div>
+					<div class="chart" id="missed-relieves" style= "display:none;"></div>
+					<div class="chart" id="officer-experience" style= "display:none;"></div>
+					<div class="chart" id="retention" style= "display:none;"></div>
+					<div class="chart" id="cadets-per-vessel" style= "display:none;"></div>
+					<div class="chart" id="seafarer-nps" style= "display:none;"></div>
+					<div class="chart" id="general" style= "display:none;"></div>
 				</div>
 			</div>
 		
