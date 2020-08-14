@@ -17,6 +17,15 @@
 		  }
 	  	  document.getElementById(chartName).style.display = "block";  
 	}
+		
+		function activateChartButton(button){
+		  var i;
+	  	  var x = document.getElementsByClassName("chart-button");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.fontWeight = "600";  
+		  }
+	  	  document.getElementById(button).style.fontWeight = "600";  
+	}
 		  
       // Load the Visualization API and the piechart package.
       google.charts.load('current', {'packages':['corechart']});
@@ -46,8 +55,8 @@
 
       // Set chart options
       var options = {'title':'Crew Changes',
-                     'width':400,
-                     'height':300};
+                     'width':600,
+                     'height':320};
 
       // Instantiate and draw our chart, passing in some options.
       var chart = new google.visualization.ColumnChart(document.getElementById('crew-changes'));
@@ -69,8 +78,8 @@
 
       // Set chart options
       var options = {'title':'Missed Relieves',
-                     'width':400,
-                     'height':300};
+                     'width':600,
+                     'height':320};
 
       // Instantiate and draw our chart, passing in some options.
       var chart = new google.visualization.ColumnChart(document.getElementById('missed-relieves'));
@@ -93,8 +102,8 @@
 
       // Set chart options
       var options = {'title':'Officer Experience',
-                     'width':400,
-                     'height':300};
+                     'width':600,
+                     'height':320};
 
       // Instantiate and draw our chart, passing in some options.
       var chart = new google.visualization.ColumnChart(document.getElementById('officer-experience'));
@@ -116,8 +125,8 @@
 
       // Set chart options
       var options = {'title':'Retention',
-                     'width':400,
-                     'height':300};
+                     'width':600,
+                     'height':320};
 
       // Instantiate and draw our chart, passing in some options.
       var chart = new google.visualization.ColumnChart(document.getElementById('retention'));
@@ -148,7 +157,7 @@
 			
 			<div class="nav-row">
 				<div id="planning" class="category" style="display:none;">
-					<button class="chart-button" onclick="openChart('crew-changes')">Crew Changes</button>
+					<button class="chart-button" onclick="openChart('crew-changes')" onclick="activateChartButton('crew-changes')">Crew Changes</button>
 					<button class="chart-button" onclick="openChart('missed-relieves')">Missed Relieves</button>
 					<button class="chart-button" onclick="openChart('officer-experience')">Officer Experience</button>
 				</div>
@@ -174,7 +183,7 @@
 			
 			<div class="nav-charts">
 				<div class="nav-column">
-					<button class="mode-button" onclick="openCategory('planning')">Planning</button>
+					<button class="mode-button active" onclick="openCategory('planning')">Planning</button>
 					<button class="mode-button" onclick="openCategory('performance')">Performance</button>
 					<button class="mode-button" onclick="openCategory('development')">Development</button>
 					<button class="mode-button" onclick="openCategory('efficiency')">Efficiency</button>
