@@ -17,15 +17,6 @@
 		  }
 	  	  document.getElementById(chartName).style.display = "block";  
 	}
-		
-		function activateChartButton(button){
-		  var i;
-	  	  var x = document.getElementsByClassName("chart-button");
-		  for (i = 0; i < x.length; i++) {
-			x[i].style.fontWeight = "600";  
-		  }
-	  	  document.getElementById(button).style.fontWeight = "600";  
-	}
 		  
       // Load the Visualization API and the piechart package.
       google.charts.load('current', {'packages':['corechart']});
@@ -133,7 +124,20 @@
       chart.draw(data, options);
 		 
     }
-    </script>
+		
+	</script>
+	
+	<script>
+	// Add active class to the current button (highlight it)
+	var btns = document.getElementById("development").getElementsByClassName("chart-button");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function() {
+	  var current = document.getElementsByClassName("active-chart");
+	  current[0].className = current[0].className.replace(" active-chart", "");
+	  this.className += " active-chart";
+	  });
+	}
+	</script>
 	
 </head>
 <body>
@@ -157,7 +161,7 @@
 			
 			<div class="nav-row">
 				<div id="planning" class="category" style="display:none;">
-					<button class="chart-button" onclick="openChart('crew-changes')" onclick="activateChartButton('crew-changes')">Crew Changes</button>
+					<button class="chart-button" onclick="openChart('crew-changes')">Crew Changes</button>
 					<button class="chart-button" onclick="openChart('missed-relieves')">Missed Relieves</button>
 					<button class="chart-button" onclick="openChart('officer-experience')">Officer Experience</button>
 				</div>
@@ -170,7 +174,7 @@
 				
 				<div id="development" class="category" style="display:none;">
 					<button class="chart-button" onclick="openChart('retention')">Retention</button>
-					<button class="chart-button" onclick="openChart('cadets-per-vessel')">Cadets per vessel</button>
+					<button class="chart-button active-chart" onclick="openChart('cadets-per-vessel')">Cadets per vessel</button>
 					<button class="chart-button" onclick="openChart('seafarer-nps')">Seafarer NPS</button>
 				</div>
 				
@@ -183,7 +187,7 @@
 			
 			<div class="nav-charts">
 				<div class="nav-column">
-					<button class="mode-button active" onclick="openCategory('planning')">Planning</button>
+					<button class="mode-button" onclick="openCategory('planning')">Planning</button>
 					<button class="mode-button" onclick="openCategory('performance')">Performance</button>
 					<button class="mode-button" onclick="openCategory('development')">Development</button>
 					<button class="mode-button" onclick="openCategory('efficiency')">Efficiency</button>

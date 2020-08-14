@@ -12,6 +12,11 @@
 	width:900px;
 	height:400px;
 	display:inline-block;
+	margin:25px;
+	border-style:solid;
+	border-width:thin;
+	border-color:#AAAAAA;
+	padding:10px;
 	
 }
 .nav {
@@ -69,7 +74,7 @@
 	padding:10px;
 	border-radius:22px;
 	background-color:transparent;
-	border-color:transparent;	
+	border-color:transparent;
 	
 }
 
@@ -78,9 +83,6 @@
 	
 }
 
-.ctActive {
-	font-weight:600;
-}
 
 .mode-button {
 	background-color:transparent;
@@ -97,9 +99,13 @@
 	border-color:#AAAAAA;
 }
 
-.active {
+.active-category {
 	border-style:solid;
 	border-right-style:none;
 	border-color:#AAAAAA;
 }
 
+.active-chart {
+	font-weight:600;
+	
+}
