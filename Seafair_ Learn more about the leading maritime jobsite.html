@@ -13,13 +13,20 @@
     
 	<script type="text/javascript">
 		
-	  function openChart(chartName){
+	function openChart(chartName){
 		  var i;
 	  	  var x = document.getElementsByClassName("chart");
 		  for (i = 0; i < x.length; i++) {
 			x[i].style.display = "none";  
 		  }
-	  	  document.getElementById(chartName).style.display = "block";  
+	  	  document.getElementById(chartName).style.display = "block"; 
+		  
+		  var y = document.getElementsByClassName("chart-button");
+		  for (i=0; i < y.length; i++) {
+			  y[i].classList.remove("active-chart");
+		  }
+		  var s="chart-";
+		  document.getElementById(s.concat(chartName)).classList.add("active-chart");
 	}
 		  
       // Load the Visualization API and the piechart package.
@@ -30,7 +37,12 @@
 	  google.charts.setOnLoadCallback(drawChartMissedRelieves);
 	  google.charts.setOnLoadCallback(drawChartOfficerExperience);
 	  google.charts.setOnLoadCallback(drawChartRetention);
+		
+	  google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChartCrewChanges2);
 
+google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
       // Callback that creates and populates a data table, 
       // instantiates the pie chart, passes in the data and
       // draws it.
@@ -54,9 +66,32 @@
                      'height':320};
 
       // Instantiate and draw our chart, passing in some options.
+		    
       var chart = new google.visualization.ColumnChart(document.getElementById('crew-changes'));
       chart.draw(data, options);
     }
+	  function drawChartCrewChanges2() {	
+
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses', 'Profit'],
+          ['2014', 1000, 400, 200],
+          ['2015', 1170, 460, 250],
+          ['2016', 660, 1120, 300],
+          ['2017', 1030, 540, 350]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Company Performance',
+            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+          },
+          bars: 'horizontal' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('crew-changes-2'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
 	  function drawChartMissedRelieves() {
 
       // Create the data table.
@@ -130,9 +165,6 @@
     }
 		
 	</script>
-	
-	
-	
 	
   <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
     h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
@@ -280,6 +312,13 @@ table.keyword-info-table {
 	left:0;
 	font-family: Avenir22, Nunito, Helvetica, Arial, "serif";
 }
+.body {
+	height:250px;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
 .container {
 	width:900px;
 	height:400px;
@@ -289,24 +328,9 @@ table.keyword-info-table {
 	border-width:thin;
 	border-color:#AAAAAA;
 	padding:10px;
+	background-color:#F7f7f7;
 	
 }
-	
-	.vessel {
-		margin-right:10px;
-		margin-bottom:15px;
-		font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-		
-	}
-	
-	.vessel-choices {
-		display:inline-flex;
-		flex-flow:column;
-		margin-top:100px;
-		margin-left:15px;
-		margin-bottom:100px;
-		
-	}
 .nav {
 }
 
@@ -316,14 +340,13 @@ table.keyword-info-table {
 	flex-wrap:nowrap;
 	align-items:flex-start;
 	
-}
 	
-	button {
-		font-family:Avenir26, Nunito, Helvetica, 'serif';
-	}
+	
+}
 
 .nav-column {
 	width:100px;
+	maring-right:50px;
 	display:inline-flex;
 	flex-flow:column;
 	height:300px;
@@ -362,6 +385,7 @@ table.keyword-info-table {
 .chart-button {
 	margin-right:15px;
 	padding:10px;
+	font-weight:500;
 	border-radius:22px;
 	background-color:transparent;
 	border-color:transparent;
@@ -373,14 +397,13 @@ table.keyword-info-table {
 	
 }
 
-
 .mode-button {
 	background-color:transparent;
 	border-color:transparent;
 	border-width:thin;
-	border-style:solid;
 	text-align:left;
-	
+	border-style:solid;
+	border-right-style:none;
 }
 
 .mode-button:hover {
@@ -399,6 +422,23 @@ table.keyword-info-table {
 	font-weight:600;
 	
 }
+
+
+	.vessel {
+		margin-right:10px;
+		margin-bottom:15px;
+		font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		
+	}
+	
+	.vessel-choices {
+		display:inline-flex;
+		flex-flow:column;
+		margin-top:100px;
+		margin-left:15px;
+		margin-bottom:100px;
+		
+	}
 
 	
 </style><style type="text/css">.keyword-info-section {
@@ -608,42 +648,35 @@ table.bl-info-table {
 	  
 	  <section _ngcontent-serverapp-c76=""><p _ngcontent-serverapp-c76="" class="company-team__title" style="font-family: Avenir22, Nunito,Helvetica, 'sans-serif';">Take charge of your vessel</p><div _ngcontent-serverapp-c76="" class="company-scroll" style="font-family:Avenir22, Nunito, Helvetica,'serif';">
 		  
-		  	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		<script>
-				function openCategory(categoryName) {
-				// Add active class to the current button (highlight it)	
-				var elements = document.getElementsByClassName("mode-button");
-					for (var m = 0; m < elements.length; m++)
-						{
-							elements[m].onclick = function() {
-							document.getElementById(categoryName).style.display = "block";
-								//remove class from sibling
-								var el = elements[0];
-								while(el)
-									{
-										if(el.tagName === "BUTTON"){
-											// remove class
-										   el.classList.remove("active-category");
-										}
-										// pass to the new sibling
-										el = el.nextSibling;
-									}
-								
-								this.classList.add("active-category");							
-	
-							};
-						}
-				}
-				</script>
+			function openCategory(categoryName) {
+			  var i;
+			  var x = document.getElementsByClassName("category");
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  document.getElementById(categoryName).style.display = "block";
+
+			  var y = document.getElementsByClassName("mode-button");
+			  var s = "mode-";
+			  for (i = 0; i < y.length; i++) {
+				  y[i].classList.remove("active-category");
+			  }
+				document.getElementById(s.concat(categoryName)).classList.add("active-category");
+
+			}
+		</script>
 	
 <div class="container" style="font-family:Avenir22, Nunito, Helvetica, 'serif';">
+		
 		<div class="nav">
 			
 			<div class="nav-row">
 				<div id="planning" class="category" style="display:none;">
-					<button class="chart-button" onclick="openChart('crew-changes')">Crew Changes</button>
-					<button class="chart-button" onclick="openChart('missed-relieves')">Missed Relieves</button>
-					<button class="chart-button" onclick="openChart('officer-experience')">Officer Experience</button>
+					<button class="chart-button" id="chart-crew-changes" onclick="openChart('crew-changes')">Crew Changes</button>
+					<button class="chart-button" id="chart-missed-relieves" onclick="openChart('missed-relieves')">Missed Relieves</button>
+					<button class="chart-button" id="chart-officer-experience" onclick="openChart('officer-experience')">Officer Experience</button>
 				</div>
 				
 				<div id="performance" class="category" style="display:none;">
@@ -653,9 +686,9 @@ table.bl-info-table {
 				</div>
 				
 				<div id="development" class="category" style="display:none;">
-					<button class="chart-button" onclick="openChart('retention')">Retention</button>
-					<button class="chart-button" onclick="openChart('cadets-per-vessel')">Cadets per vessel</button>
-					<button class="chart-button" onclick="openChart('seafarer-nps')">Seafarer NPS</button>
+					<button class="chart-button" id="chart-retention" onclick="openChart('retention')">Retention</button>
+					<button class="chart-button" id="chart-cadets-per-vessel" onclick="openChart('cadets-per-vessel')">Cadets per vessel</button>
+					<button class="chart-button" id="chart-seafarer-nps" onclick="openChart('seafarer-nps')">Seafarer NPS</button>
 				</div>
 				
 				<div id="efficiency" class="category" style="display:none;">
@@ -667,12 +700,11 @@ table.bl-info-table {
 			
 			<div class="nav-charts">
 				<div class="nav-column">
-					<button class="mode-button" onclick="openCategory('planning')">Planning</button>
-					<button class="mode-button" onclick="openCategory('performance')">Performance</button>
-					<button class="mode-button" onclick="openCategory('development')">Development</button>
-					<button class="mode-button" onclick="openCategory('efficiency')">Efficiency</button>
+					<button class="mode-button" id="mode-planning" onclick="openCategory('planning')">Planning</button>
+					<button class="mode-button" id="mode-performance" onclick="openCategory('performance')">Performance</button>
+					<button class="mode-button" id="mode-development" onclick="openCategory('development')">Development</button>
+					<button class="mode-button" id="mode-efficiency" onclick="openCategory('efficiency')">Efficiency</button>
 				</div>
-			
 				
 				<div class="chartspace">
 					<div class="vessel-choices">
@@ -688,10 +720,9 @@ table.bl-info-table {
 						  <input type="checkbox">
 						  <span class="checkmark"></span>
 						</label>
-					
-					
 					</div>
 					<div class="chart" id="crew-changes" style="display:none;"></div>
+					<div class="chart" id="crew-changes-2" style="display:none; width: 800px; height: 500px;"></div>
 					<div class="chart" id="missed-relieves" style= "display:none;"></div>
 					<div class="chart" id="officer-experience" style= "display:none;"></div>
 					<div class="chart" id="retention" style= "display:none;"></div>
@@ -705,7 +736,7 @@ table.bl-info-table {
 			
 		</div>
 	
-	</div>
+</div>
 		  
 		  
 		  </div></section></div></div><div _ngcontent-serverapp-c71="" class="footer ng-star-inserted" style="font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';"><div _ngcontent-serverapp-c71="" fxhide.lt-sm="" class="footer__links"><div _ngcontent-serverapp-c71="" class="footer__links-social"><img _ngcontent-serverapp-c71="" src="./Seafair_ Learn more about the leading maritime jobsite_files/logo-white.svg" alt="logo seafair" class="footer__links-icon"><a _ngcontent-serverapp-c71="" href="https://www.facebook.com/Seafair-101320501563713/" target="_blank"><img _ngcontent-serverapp-c71="" src="./Seafair_ Learn more about the leading maritime jobsite_files/facebook-logo.svg" alt="facebook logo" class="footer__links-social-logo"></a><a _ngcontent-serverapp-c71="" href="https://www.linkedin.com/company/seafair-io/" target="_blank"><img _ngcontent-serverapp-c71="" src="./Seafair_ Learn more about the leading maritime jobsite_files/linkedin-logo.svg" alt="linked in logo" class="footer__links-social-logo"></a></div><span _ngcontent-serverapp-c71="" class="footer__links-title">For crew managers</span><span _ngcontent-serverapp-c71="" class="footer__links-title">For seafarers</span><span _ngcontent-serverapp-c71="" class="footer__links-title">Company</span><a _ngcontent-serverapp-c71="" routerlink="/for-shipping-companies" class="footer__links-text" href="https://www.seafair.io/for-shipping-companies">Hire seafarers</a><a _ngcontent-serverapp-c71="" routerlink="/for-seafarers" class="footer__links-text" href="https://www.seafair.io/for-seafarers">Find job</a><a _ngcontent-serverapp-c71="" routerlink="/about-us" class="footer__links-text" href="https://www.seafair.io/about-us">About us</a><a _ngcontent-serverapp-c71="" routerlink="/how-it-works" class="footer__links-text footer__links-how" href="https://www.seafair.io/how-it-works">How it works</a></div><div _ngcontent-serverapp-c71="" fxhide.gt-xs="" class="footer__links" style="display: none;"><div _ngcontent-serverapp-c71="" class="footer__links-social"><img _ngcontent-serverapp-c71="" src="./Seafair_ Learn more about the leading maritime jobsite_files/logo-white.svg" alt="logo seafair" class="footer__links-icon"><a _ngcontent-serverapp-c71="" href="https://www.facebook.com/Seafair-101320501563713/" target="_blank"><img _ngcontent-serverapp-c71="" src="./Seafair_ Learn more about the leading maritime jobsite_files/facebook-logo.svg" alt="facebook logo" class="footer__links-social-logo"></a><a _ngcontent-serverapp-c71="" href="https://www.linkedin.com/company/seafair-io/" target="_blank"><img _ngcontent-serverapp-c71="" src="./Seafair_ Learn more about the leading maritime jobsite_files/linkedin-logo.svg" alt="linked in logo" class="footer__links-social-logo"></a></div><span _ngcontent-serverapp-c71="" class="footer__links-title">For crew managers</span><a _ngcontent-serverapp-c71="" routerlink="/for-shipping-companies" class="footer__links-text" href="https://www.seafair.io/for-shipping-companies">Hire seafarers</a><a _ngcontent-serverapp-c71="" routerlink="/how-it-works" class="footer__links-text" href="https://www.seafair.io/how-it-works">How it works</a><span _ngcontent-serverapp-c71="" class="footer__links-title">For seafarers</span><a _ngcontent-serverapp-c71="" routerlink="/for-seafarers" class="footer__links-text" href="https://www.seafair.io/for-seafarers">Find job</a><span _ngcontent-serverapp-c71="" class="footer__links-title">Company</span><a _ngcontent-serverapp-c71="" routerlink="/about-us" class="footer__links-text" href="https://www.seafair.io/about-us">About us</a></div><div _ngcontent-serverapp-c71="" class="footer__terms"><span _ngcontent-serverapp-c71="" class="text">© 2020 Seafair Inc. All rights reserved</span><a _ngcontent-serverapp-c71="" href="https://storage.googleapis.com/seafair/privacy-policy.pdf" target="_blank" class="text">Privacy Policy</a><a _ngcontent-serverapp-c71="" href="https://storage.googleapis.com/seafair/site-terms-of-use.pdf" target="_blank" class="text">Site Terms of Use</a></div></div><!----></mat-sidenav-content><!----></mat-sidenav-container></app-layout></app-company><!----></app-root>
