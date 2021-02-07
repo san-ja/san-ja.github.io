@@ -1,0 +1,413 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+    font-family: Avenir, Helvetica, Nunito, serif; /*Avenir22*/
+    color: #5b5b5b;
+    background: #f6f6f6;
+	font-size:16px;
+	line-height:20px;
+	overflow-x: hidden;
+}
+a.name{
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+.header {
+	color: rgba(0,0,0,.46);
+    background: #fff;
+	width:100%;
+    display:inline-flex;
+    padding: 2px 16px;
+    align-items: center;
+    height: 70px;
+	position:relative;
+	top:0px;
+}
+.btn-link {
+	color: #5b5b5b;
+    font-size: 18px;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 27px;
+	margin-right: 15px;
+}
+.btn-link-primary {
+	line-height: 36px;
+    padding: 0 16px;
+    min-width: 130px;
+    background: #5295ef;
+    color: #fff;
+	text-decoration:none;
+	padding:10px;
+	padding-left:30px;
+	padding-right:30px;
+	border-radius:5px;
+}
+.buttons-left{
+	display:inline;
+	vertical-align:baseline;
+	margin-right:50%;
+	width:50%;
+	
+}
+.buttons-right {
+	display:inline;
+	width:20%;
+
+}
+.logo {
+	height:30px;
+	width:auto;
+	position:relative;
+	top:3px;
+	margin-right:15px;
+	
+}
+#more, #more1, #more2, #more3 {
+	display:none;
+}
+
+h1 {
+	line-height:30px;
+	font-size:32px;
+	font-style: normal;
+	font-weight:300;
+	display:inline-block;
+}
+
+#btnContainer {
+	width:70%;
+	margin-left:15%;
+	margin-right:15%;
+}
+
+.nav {
+	width:40%;
+	padding-right:100px;
+	padding-top:3px;
+	padding-bottom:3px;
+	display:inline-block;
+	
+	
+}
+
+button:hover{
+	opacity:0.7;
+}
+
+.btnSort:active {opacity:0.7;}
+
+
+.nav-item {
+	margin-right:15px;
+	font-size:18px;
+	font-weight:500;
+	text-decoration:none;
+}
+
+.nav-item:hover{
+	text-decoration:underline;
+}
+.page-nav {
+	padding-top:10px;
+	align:"center";
+	margin-left:15%;
+	margin-right:15%;
+}
+.page-nav-border {
+	border-bottom-style:solid;
+	border-bottom-color:#949494;
+	border-width:1px;
+	width:100%;
+}
+
+.views {
+	display:inline-block;
+	width:20%;
+	margin-left:30%;
+	
+}
+
+.content {
+	width:70%;
+	margin-left:15%;
+	margin-right:15%;
+	
+}
+
+.feature {
+	
+	padding-left:3px;
+	padding-right:3px;
+	display:inline-block;
+	padding-top:25px;
+	padding-bottom:15px;
+}
+
+.photos {
+	width:30%;
+	display:inline-block;
+	color: #8c94ab;
+}
+
+.story {
+	width:65%;
+	display:inline-block;
+	line-height:1.5;
+}
+
+.photo {
+	padding:3%;
+	display:inline-block;
+	padding-top:15%;
+	
+}
+h6 {
+	font-size:20px;
+	line-height:0.5rem;
+}
+
+h5 {
+	color: #253d65;
+	font-size:28px;
+	line-height:0.5rem;
+	display:inline;
+	margin-right:50%;
+	
+}
+.share-icon {
+	margin-left:5px;
+}
+
+a.share {
+	text-decoration:none;
+	color:#A6A6A6;
+}
+a.share:hover{
+	color:#757575;
+}
+
+
+h4 {
+	box-sizing: border-box;
+    position: relative;
+	display:inline-block;
+		
+}
+h3 {
+	font-size:32px;
+}
+
+p {
+	
+	color:#000000;
+	font-weight:300;
+	font-size:18px;
+}
+
+button {
+	
+	background-color:#5295ef;
+	color:#ffffff;
+	border-color:none;
+	border:none;
+	border-radius:5px;
+	font-size:16px;
+	padding:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+button:hover {
+	cursor:pointer;
+}
+
+#footer {
+	width:100%;
+	padding-bottom:1%;
+	margin-top:5%;
+	background-color:#253d65;
+	position:relative;
+	bottom:0px;
+	
+}
+
+.footer-logo{
+	padding-top:25px;
+	padding-left:15px;
+	padding-bottom:10px;
+	
+}
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+/*.facebook {
+  background: #3B5998;
+  color: white;
+}*/
+
+/*.linkedin {
+  background: #007bb5;
+  color: white;
+}*/
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.envelope {
+	background:#253d65;
+	color: white;
+}
+
+
+.fa {
+  padding: 0px;
+	padding-top:7px;
+	padding-bottom:3px;
+border-radius:5px;
+ 	width:30px;
+margin-right:15px;
+  text-align: center;
+  text-decoration: none;
+	margin-top:10px;
+}
+
+
+
+/* Facebook */
+.fa-facebook {
+  background: #ffffff;
+  color: #253d65;
+font-size: 100px;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+  background: #ffffff;
+  color: #253d65;
+}
+
+.footer-row-bottom{
+	
+	font-size:16px;
+	color:#ffffff;
+	padding-top:25px;
+	margin-left:15px;
+	width:100%;
+	display:inline-block;
+	
+}
+.left {
+	width:50%;
+	display:inline-block;
+	
+}
+
+.right {
+	width:48%;
+	display:inline-block;
+	text-align:right;
+	text-decoration:none;
+	color:#fff;
+	
+}
+
+a.agreements {
+	text-decoration:none;
+	color:#ffffff;
+	margin-left:15px;
+	
+}
+
+.company, .crew-managers, .seafarers {
+	display:inline-block;
+	width:25%;
+	
+	
+}
+.nav-title {
+	font-weight:500;
+	font-size:20px;
+	color:#ffffff;
+	line-height:2.5;
+	
+}
+
+.footer-nav {
+	width:70%;
+	display:inline-block;
+	
+}
+
+.logos {
+	width:25%;
+	display:inline-block;
+}
+
+.nav-links {
+	display:block;
+	padding-left:15px;
+}
+
+a.nav-link{
+	text-decoration:none;
+	color:#ffffff;
+	line-height:2.5;
+	
+}
+
+a.action-call {
+	text-decoration:none;
+	color:#5295ef;
+}
+a.action-call:hover {
+	text-decoration:underline;
+}
+

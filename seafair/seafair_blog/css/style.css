@@ -1,0 +1,843 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+	font-family:Avenir22;
+	src:url("http://shecantech.org/sanja_projects/css/AvenirLTStd-Roman.otf");
+}
+
+body {
+	margin: 0;
+    font-family: Avenir22, Helvetica, Nunito, serif; /*Avenir22*/
+    color: #5b5b5b;
+    background: #f6f6f6;
+	font-size:16px;
+	line-height:20px;
+	overflow-x: hidden;
+}
+a.name{
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+	opacity:0.7;
+}
+
+.header {
+	color: #5B5B5B;
+    width:100%;
+	position: relative;
+	height: 70px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	background: #FFFFFF;
+}
+
+.top-logo {
+	left: 0.625%;
+	position:absolute;
+	top:20%;
+	max-width: 120px;
+}
+
+.seafair {
+	display:inline-flex;
+}
+
+.btn-link {
+	color: #5b5b5b;
+    font-size: 18px;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 27px;
+	margin-right: 15px;
+}
+.btn-link-primary {
+	position: absolute;
+	width: 130px;
+	height: 36.37px;
+	right: 0px;
+	top: 0px;
+}
+
+.bg {
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 1.01%;
+	background: #5295EF;
+	border-radius: 6px;
+}
+
+.start-hiring {
+	left:9.79166667%;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 27px;
+	text-decoration:none;
+	position:absolute;
+	display:inline-flex;
+	top: 23px;
+	margin-right:15px;
+	letter-spacing: -0.015em;
+	color: #5B5B5B;
+}
+
+.find-job {
+	left:19.8611111%;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 27px;
+	text-decoration:none;
+	position:absolute;
+	display:inline-flex;
+	top: 23px;
+	margin-right:15px;
+	letter-spacing: -0.015em;
+	color: #5B5B5B;
+}
+
+.about-us {
+	left:81.3888889%;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 27px;
+	text-decoration:none;
+	position:absolute;
+	display:inline-flex;
+	top: 23px;
+	margin-right:15px;
+	letter-spacing: -0.015em;
+	color: #5B5B5B;
+}
+
+
+.btn-link {
+	position: absolute;
+	width: 130px;
+	height: 36.37px;
+	left: 89.5138889%;
+	top: calc(50% - 36.37px/2 + 2.18px);
+}
+
+.primary {
+	position: relative;
+	left: 29.23%;
+	right: 29.23%;
+	top: 11%;
+	bottom: 17.51%;
+	text-decoration:none;
+	font-family: Avenir22;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 26px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: -0.015em;
+	color: #FFFFFF;
+	}
+
+.logo {
+	height:30px;
+	width:auto;
+	position:relative;
+	top:3px;
+	margin-right:15px;
+	
+}
+
+.title-header {
+	position: absolute;
+	width: 100%;
+	height: 312px;
+	left: 0px;
+	top: 70px;
+
+	background: #223C60;
+}
+
+.title {
+	/* Faces of Seafair */
+
+
+	position: absolute;
+	width: 24.5833333%;
+	height: 61px;
+	left: 37.7083333%;
+	top: 106px;
+
+	/* H1 */
+
+	font-family: Avenir22;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 51px;
+	line-height: 61px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: -0.015em;
+
+	color: #FFFFFF;
+}
+
+
+.desc {
+	position: absolute;
+	width: 77.5694444%;
+	height: 52px;
+	left: 11.25%;
+	top: 220px;
+
+	/* Body */
+
+	font-family: Avenir22;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 26px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: -0.015em;
+	color: #FFFFFF;
+
+}
+
+.sort-bar {
+	position: relative;
+	width: 100%;
+	padding-left:15%;
+	align:center;
+	height: 26px;
+	display:inline;
+
+}
+
+.sort-by {
+	position: relative;
+	width: 12.2916667%;
+	height: 26px;
+	align:center;
+	display:inline;
+
+	/* Body */
+
+	font-family: Avenir22;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 26px;
+	
+	align-items: center;
+	text-align: right;
+	letter-spacing: -0.015em;
+
+	color: #253D65;
+	}
+
+.dropdown {
+	position: relative;
+	width: 20px;
+	height: 18px;
+	align:center;
+	margin-left:70px;
+	top:0px;
+	border-radius: 1px;
+	display:inline;
+
+}
+
+.share {
+	font-family: Avenir22;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 31px;
+	display: flex;
+	align-items: right;
+	text-align: right;
+	letter-spacing: -0.015em;
+	color: #5295EF;
+	background:none;
+	border:none;
+	position:absolute;
+	right:0;
+	
+	
+	
+}
+
+.show {display:block;}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+.dropbtn {
+  	font-size: 16px;
+  	border: none;
+  	cursor: pointer;
+	background-color:rgba(0,0,0,0.00);
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+	margin-left:15%;
+  background-color: #f6f6f6;
+  min-width: 230px;
+max-width:300px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.nav-item {
+	margin-right:15px;
+	font-size:18px;
+	font-weight:500;
+	text-decoration:none;
+}
+
+.nav-item:hover{
+	text-decoration:underline;
+}
+.page-nav {
+	padding-top:10px;
+	align:"center";
+	margin-left:15%;
+	margin-right:15%;
+}
+.page-nav-border {
+	border-bottom-style:solid;
+	border-bottom-color:#949494;
+	border-width:1px;
+	width:100%;
+}
+
+.views {
+	display:inline-block;
+	width:20%;
+	margin-left:30%;
+	
+}
+
+.content {
+	width:70%;
+	margin-left:15%;
+	margin-right:15%;
+	
+}
+
+.seafarer {
+	padding-right:145px;
+}
+
+.seafarer-name {
+	height: 48px;
+	cellspacing: 0;
+	celpadding:0;
+	padding:0px;
+		
+}
+
+
+h2 {
+	height:36px;
+}
+
+.nav {
+	padding:10px;
+	width:100%;
+	align:center;
+	position:absolute;
+	top:433px;
+}
+
+.text{
+	
+	width:43.75%;
+	font-family: Avenir22;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 26px;
+	letter-spacing: -0.015em;
+
+	color: #5B5B5B;
+	
+}
+
+.feature {
+	
+	display:inline-block;
+	padding-top:64px;
+	padding-bottom:80px;
+
+}
+
+.photos {
+	width:30%;
+	display:inline-block;
+	color: #8c94ab;
+}
+
+.story {
+	width:65%;
+	display:inline-block;
+	line-height:1.5;
+}
+
+.photo {
+	padding:3%;
+	display:inline-block;
+	padding-top:15%;
+	
+}
+h6 {
+	font-size:20px;
+	line-height:0.5rem;
+}
+
+h5 {
+	color: #253d65;
+	font-size:28px;
+	line-height:0.5rem;
+	display:inline;
+	margin-right:50%;
+	
+}
+.share-icon {
+	margin-left:5px;
+}
+
+a.share {
+	text-decoration:none;
+	text-align:right;
+	
+}
+a.share:hover{
+	opacity:0.7;
+}
+
+.shareBtn {
+	text-align:right;
+}
+
+
+h4 {
+	box-sizing: border-box;
+    position: relative;
+	display:inline-block;
+		
+}
+
+h2 {
+	/* H2 */
+
+	font-family: Avenir22;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 36px;
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.015em;
+
+	color: #5295EF;
+
+}
+
+h3.name {
+	font-family: Avenir22;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 48px;
+	color: #253D65;
+
+}
+
+p {
+	
+	color:#000000;
+	font-weight:300;
+	font-size:18px;
+}
+
+
+footer {
+	position: relative;
+	width: 100%;
+	height: 244px;
+	background: #223C60;
+	margin-top:30%;
+	
+}
+
+.bordered {
+	border-top:  4px dashed #5295EF;
+	border-width:2px;
+}
+
+#container {
+	position: relative;
+	width: 71.7777778%;
+	align:center;
+	top: 424px;
+	
+}
+
+.footer-logo{
+	
+	padding-bottom:10px;
+	
+}
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+/*.facebook {
+  background: #3B5998;
+  color: white;
+}*/
+
+/*.linkedin {
+  background: #007bb5;
+  color: white;
+}*/
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.envelope {
+	background:#253d65;
+	color: white;
+}
+
+
+.fa {
+  padding: 0px;
+	padding-top:7px;
+	padding-bottom:3px;
+border-radius:5px;
+ 	width:30px;
+margin-right:15px;
+  text-align: center;
+  text-decoration: none;
+	margin-top:10px;
+}
+
+
+
+/* Facebook */
+.fa-facebook {
+  background: #ffffff;
+  color: #253d65;
+font-size: 100px;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+  background: #ffffff;
+  color: #253d65;
+}
+
+.footer-row-bottom{
+	
+	font-size:16px;
+	color:#ffffff;
+	width:100%;
+	display:inline-block;
+	
+}
+.rightsReserved {
+	
+	display:inline-block;
+	position:absolute;
+	left:1.73611111%;
+	width: 294px;
+height: 22px;
+top:84.8360656%;
+
+font-family: Avenir22;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+
+color: #F1F1F1;
+
+	
+}
+
+.documents {
+	position: absolute;
+	width: 50;
+	height: 22px;
+	left: 78.3333333%;
+	top:84.8360656%;
+
+
+	font-family: Avenir22;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: -0.015em;
+
+
+
+}
+
+a.agreements {
+	text-decoration:none;
+	margin-left:15px;
+	color: #F1F1F1;
+}
+
+.company, .crew-managers, .seafarers {
+	display:inline-block;
+	width:25%;
+	
+	
+}
+
+.crew-managers{
+	left: 30%;
+	top:20%;
+	position:absolute;
+}
+
+.seafarers {
+	position:absolute;
+	left:55.7638889%;
+	top:20%;
+}
+
+.company {
+	position:absolute;
+	top:20%;
+	left:78.3%;
+}
+
+.nav-title {
+	font-weight:500;
+	font-size:20px;
+	color:#ffffff;
+	line-height:2.5;
+	
+}
+
+.footer-nav {
+	width:70%;
+	display:inline-block;
+	
+}
+
+.logos {
+	position:absolute;
+	width:25%;
+	left:1.73611111%;
+	display:inline-block;
+	top:14.75%;
+}
+
+.nav-links {
+	display:block;
+	padding-left:15px;
+}
+
+a.nav-link{
+	text-decoration:none;
+	color:#ffffff;
+	line-height:2.5;
+	
+}
+
+a.action-call {
+	text-decoration:none;
+	color:#5295ef;
+}
+a.action-call:hover {
+	text-decoration:underline;
+}
+
+
+
+#button {
+
+	background-color: #5295EF;
+}
+
+.read:hover {
+	opacity:0.7;
+	text-decoration:none;
+}
+
+a.readBtn{
+	
+	font-family: Avenir22;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 26px;
+	padding-top:5px;
+	padding-bottom:5px;
+	align-items: right;
+	text-align: right;
+	letter-spacing: -0.015em;
+	color: #FFFFFF;
+	text-decoration:none;
+	position: relative;
+	height: 54px;
+	right: 0px;
+	border:none;
+	background-color: #5295EF;
+	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+	border-radius: 6px;
+	
+
+}
+.country {
+	font-family: Avenir22;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.015em;
+
+	color: #5B5b5b;opacity:0.5;
+	
+}
+
+.rank {
+	font-family: Avenir22;
+	font-style: normal;
+	font-weight: 600;font-size: 30px;
+	line-height: 36px;
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.015em;
+
+	color: #5295EF;
+}
+
+.images {
+	width:30%;
+	
+}
+
+.about {
+	padding-left:15%;
+}
+
+.seafarer-about {
+	position: relative;
+	width: 71.7777778%;
+	align:center;
+	top: 424px;
+}
+
+.post {
+	width:85%;
+	font-family: Avenir22;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 26px;
+	letter-spacing: -0.015em;
+
+	color: #5B5B5B;
+	
+}

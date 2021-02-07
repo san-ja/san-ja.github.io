@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+    font-family: Nunito, serif; /*Avenir22*/
+    color: #5b5b5b;
+    background: #f6f6f6;
+	font-size:16px;
+	line-height:20px;
+}
+
+.header {
+	color: rgba(0,0,0,.46);
+    background: #fff;
+	width:100%;
+    display: inline-flex;
+    padding: 2px 16px;
+    align-items: center;
+    height: 70px;
+}
+.btn-link {
+	color: #5b5b5b;
+    font-size: 18px;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 27px;
+	margin-right: 15px;
+}
+.btn-link-primary {
+	line-height: 36px;
+    padding: 0 16px;
+    min-width: 130px;
+    background: #5295ef;
+    color: #fff;
+}
+.buttons-left{
+	left:0px;
+}
+.buttons-right {
+	right:0px;
+}
+.logo {
+	height:30px;
+	width:auto;
+	position:relative;
+	top:3px;
+	margin-right:15px;
+	
+}
+#more {
+	display:none;
+}
+
+h1 {
+	line-height:30px;
+	font-size:32px;
+	font-style: normal;
+	font-weight:300;
+	display:inline-block;
+}
+
+.nav {
+	width:35%;
+	margin-left:5%;
+	padding-right:100px;
+	padding-top:3px;
+	padding-bottom:3px;
+	display:inline-block;
+	
+	
+}
+.nav-item {
+	margin-right:15px;
+	font-size:18px;
+	font-weight:400;
+	text-decoration:none;
+}
+
+.nav-item:hover{
+	text-decoration:underline;
+}
+.page-nav {
+	padding-top:10px;
+	align:"center";
+	margin-left:15%;
+	margin-right:15%;
+}
+.page-nav-border {
+	border-bottom-style:solid;
+	border-bottom-color:#949494;
+	border-width:1px;
+	width:100%;
+}
+
+.views {
+	display:inline-block;
+	width:50%;
+	
+}
+
+h4 {
+	box-sizing: border-box;
+    position: relative;
+	display:inline-block;
+		
+}
+
+.months {
+	width:70%;
+	margin-left:15%;
+	margin-right:15%;
+}
+
+.month {
+	
+	padding-left:3px;
+	padding-right:3px;
+	display:inline-block;
+	border-bottom-style:solid;
+	border-color: #949494;
+	border-width:1px;
+}
+
+.month-name {
+	width:30%;
+	display:inline-block;
+	color: #8c94ab;
+}
+
+.stories {
+	width:65%;
+	display:inline-block;
+}
+
+h5 {
+	color: #253d65;
+}
+
+p {
+	
+	color:#000000;
+	font-weight:300;
+}
+
+h3 {
+	font-size:32px;
+}
+
+
+
+

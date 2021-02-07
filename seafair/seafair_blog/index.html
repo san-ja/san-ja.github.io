@@ -1,0 +1,389 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Seafair: Blog</title>
+    <meta name="Description" content="View Faces Of Seafair, the excellent seafarers who use our network. ">
+	<meta name="author" content="Seafair">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="blog, #facesOfSeafair, seafarers">
+		  
+	<!--icons-->
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<!--CSS-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+		<!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="avenir_ff/AvenirLTStd-Roman.otf">
+	
+	
+	<!-- NEED TO INSERT: Global site tag (gtag.js) - Google Analytics -->
+	<!--JS-->
+	
+	<script>
+	function sortTableCountry() {
+	  var table, rows, switching, i, x, y, shouldSwitch;
+	  table = document.getElementById("container");
+	  switching = true;
+	  /*Make a loop that will continue until
+	  no switching has been done:*/
+	  while (switching) {
+		//start by saying: no switching is done:
+		switching = false;
+		rows = table.rows;
+		/*Loop through all table rows (except the
+		first, which contains table headers):*/
+		for (i = 1; i < (rows.length - 1); i++) {
+		  //start by saying there should be no switching:
+		  shouldSwitch = false;
+		  /*Get the two elements you want to compare,
+		  one from current row and one from the next:*/
+		  x = rows[i].getElementsByClassName("seafarer-country")[0];
+		  y = rows[i + 1].getElementsByClassName("seafarer-country")[0];
+		  //check if the two rows should switch place:
+		  if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+			//if so, mark as a switch and break the loop:
+			shouldSwitch = true;
+			break;
+		  }
+		}
+		if (shouldSwitch) {
+		  /*If a switch has been marked, make the switch
+		  and mark that a switch has been done:*/
+		  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+		  switching = true;
+		}
+	  }
+	}
+</script>
+	<script>
+	function sortTableRank() {
+	  var table, rows, switching, i, x, y, shouldSwitch;
+	  table = document.getElementById("container");
+	  switching = true;
+	  /*Make a loop that will continue until
+	  no switching has been done:*/
+	  while (switching) {
+		//start by saying: no switching is done:
+		switching = false;
+		rows = table.rows;
+		/*Loop through all table rows (except the
+		first, which contains table headers):*/
+		for (i = 1; i < (rows.length - 1); i++) {
+		  //start by saying there should be no switching:
+		  shouldSwitch = false;
+		  /*Get the two elements you want to compare,
+		  one from current row and one from the next:*/
+		  x = rows[i].getElementsByClassName("seafarer-rank")[0];
+		  y = rows[i + 1].getElementsByClassName("seafarer-rank")[0];
+		  //check if the two rows should switch place:
+		  if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+			//if so, mark as a switch and break the loop:
+			shouldSwitch = true;
+			break;
+		  }
+		}
+		if (shouldSwitch) {
+		  /*If a switch has been marked, make the switch
+		  and mark that a switch has been done:*/
+		  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+		  switching = true;
+		}
+	  }
+	}
+</script>
+
+</head>
+
+<body>
+	<section id="header">
+		<div class="header">
+
+			<div class="seafair">
+				<a href="https://www.seafair.io/"><img src="seafair.png" class="top-logo" alt="Light blue Seafair logo" width="8.88194444%;"></a>
+			</div>
+				<a class="start-hiring" href="https://www.seafair.io/for-shipping-companies">Start hiring</a>
+				<a class="find-job" href="https://www.seafair.io/for-seafarers">Find a job</a>
+				<a class="about-us" href="https://www.seafair.io/about-us">About Us</a>
+			<div class="btn-link">
+				<div class="btn-link-primary"><div class="bg"><a class="primary" href="https://www.seafair.io/login">Login</a></div>
+
+				</div>
+
+			</div>	
+
+		</div>
+	</section>
+	
+	<section id="main">
+		<div class="title-header">
+			<h1 class="title">Faces Of Seafair</h1>
+			<p class="desc">Excellent seafarers use Seafair to find their next contract. Read about them.</p>
+		</div>
+		
+		
+	<section id="faces">
+		<div class="nav">
+						<div class="sort-bar">
+							<p class="sort-by">SORT BY:</p>
+							<div class="dropdown">
+								<button class="dropbtn"><i class="arrow down"></i></button>
+								 <div class="dropdown-content">
+									<a href="#country" onclick="sortTableCountry()">COUNTRY</a>
+									<a href="#rank" onclick="sortTableRank()">RANK</a>
+								</div>
+							</div>
+		
+						</div>
+		</div>
+		
+		<table id="container" cellspacing="0" width="1292" align="center" border="0" border-color="#000000" cellpadding="0" style="max-width:1380px;">
+			<tbody>
+				
+				<!--Faces Of Seafair-->
+				<tr>
+					<td class="bordered">
+						<table cellpadding="0" class="feature">
+							<tbody>
+								<tr>
+									<td rowspan="6" class="seafarer" style="width:35%;"><img src="demet.jpg" width="100%"></td>		
+									<th colspan="3" class="seafarer-name" align="left" style="width:65%;"><h3 class="name">Demet Cayabyab</h3></th></tr>
+								<tr>
+									<td rowspan="1" class="seafarer-country">
+									<h2 class="country">Philippines</h2>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="2" class="seafarer-rank"><h2 class="rank">Cabin steward</h2>
+									</td>
+								</tr>
+								<tr><td align="right"><a href="https://www.facebook.com/permalink.php?story_fbid=152900716405691&id=101320501563713&__xts__[0]=68.ARD1tK8Q2r2HFZLUFKE6zZ6Q-n_wBSD2Z25UFQ4ES0OfO41gZU6u4O_Hg88PjG3t-R12ctBUklnUx392Vgn_6U8xbYxJec3yUSFMUSOfG7pcUHfGIr-hx0GjuC6HGJpN5uDlC0QbidLNPt4b6hCkYhGkjSuajWGwy-9KfgM-r9ljvd7l3jHJplr37au2KZJyq5Z-SJN3sf2XHWEWXI8zB8R8CHGQLupwTlTFn6Ek97Wq66lchJA7ov_CXyOlFDtwSvxt5HYw6SY3JwD1ZOoX_Dz0SsjclDW48-H0gCg9qpXNRN998J-2eNMXWP8zsqyWmGe2Gg4x9YCVr7e-z-O3mB0&__tn__=-R" class="share">Share</a></td></tr>
+
+								<tr><td colspan="3" class="text"> It is Demet’s dream to be a seafarer, and he gets to be one as a cabin steward. With a dozen years of experience on board, Demet has many stories and destinations to tell of. Demet hopes to continue building up his array of experiences in order to someday become... </td>
+								</tr>
+								<tr>
+									<td></td><td colspan="2" align="right"><a href="demetcayabyab.html" class="readBtn"><p class="read">Read More</p></a></td>
+									
+								
+								</tr>
+							
+							</tbody>
+								
+						</table>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="bordered">
+						<table cellpadding="0" class="feature">
+							<tbody>
+								<tr>
+									<td rowspan="6" style="width:35%;" class="seafarer"><img src="jyan1.png" width="100%"></td>		
+									<th colspan="3" class="seafarer-name" align="left" style="width:65%;"><h3 class="name">Jyan Pantoja</h3></th></tr>
+								<tr>
+									<td rowspan="1" class="seafarer-country">
+									<h2 class="country">Philippines</h2>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="2" class="seafarer-rank"><h2 class="rank">Third officer</h2>
+									</td>
+								</tr>
+								<tr><td align="right"><a href="https://www.facebook.com/permalink.php?story_fbid=150757146620048&id=101320501563713&__xts__[0]=68.ARByOKncZc5qqLHDqh-tUvpLxM_cYmb0RyBYf7ztM99FzeiGGREGtoL7NcnmV8oPsN03XfKOi4G5ZP49mJphOg_EDa_PyN5QcjcHB8N1LoLj6nFoc_CoYYfrTnbc5cLjz-74CT0ugYK1t1I_agtU4eR-ZaOVnPNyuRtbo2w3BG9C543_N_SsRRpyyiJ4PtnOxrHrKA2TuGLTAsx9LHl2ykft5QA7nJ_c0-w8uStGn3hnFJTSlvPPtTDML9oXjYtFutahJajL1bY0jhFLGqMypT9bburs_fEI-5t_6nSdzM4rV2S4WtlrnhGrl_SihxYa7zxqNt-zmwv3hM4ls0QyI0E&__tn__=-R" class="share">Share</a></td></tr>
+								
+								<tr><td colspan="3" class="text">Jyan is a 3rd Officer from the Philippines, but she is also the creator of a popular seafarer vlog, Jy's Journal. As the eldest in the family, Jyan had not considered a maritime profession until her family encouraged her to pursue seafaring. It took courage and persistence to complete training and to ...</td>
+								</tr>
+								<tr>
+									<td></td><td colspan="2" align="right"><a href="jyanpantoja.html" class="readBtn"><p class="read">Read More</p></a></td>
+									
+								
+								</tr>
+							
+							</tbody>
+								
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="bordered">
+						<table cellpadding="0" class="feature">
+							<tbody>
+								<tr>
+									<td rowspan="6" class="seafarer" style="width:35%;"><img src="ryan.jpg" width="100%"></td>		
+									<th colspan="3" class="seafarer-name" align="left" style="width:65%;"><h3 class="name">Ryan Bernardo</h3></th></tr>
+								<tr>
+									<td rowspan="" class="seafarer-country">
+									<h2 class="country">Philippines</h2>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="2" class="seafarer-rank"><h2 class="rank">OS</h2>
+									</td>
+								</tr>
+								<tr><td align="right"><a href="https://www.facebook.com/permalink.php?story_fbid=145223157173447&id=101320501563713&__xts__[0]=68.ARCdrSxJSzaiGpd4PpGx2_9-6_AZlCZPiOZpR9pegOq1kyLcDbbn9gDZ-mazDmniadGeZbP9zE69OAcMC9IBIg84udGYdb4JXM050uu075BrwhtKOH_7KSntMUgJ8K8gXKbE0VPVgHTXtm9eMbtACWfKvFVmXQHcyrniAmeE-nmRLYuM0GAweUdVDC_xuSXNa99mNDCmj7wWIHFQiRwG2EdiHvvSayT44v4p7EpP78tsIVc3sTbSf7LBVELsxv1E-cmNXEkbNPBuleHN3_bCk9QC5Z-Ts5C--6QVCIuP39zBvGP9nwjVdW2CTti8kDAJIcP2xT_5JSuZqg8u-gIatdo&__tn__=-R" class="share">Share</a></td></tr>
+								
+								<tr><td colspan="3" class="text">Ryan is a born seafarer. Currently an OS with a bachelors in marine transportation under his belt, he is working on gaining more seagoing experience before becoming an officer. It is his dream to be a seafarer, but Ryan admits that the process of becoming one is difficult. The hardest part for him was attending strenuous exercises...</td>
+								</tr>
+								<tr>
+									<td></td><td colspan="2" align="right"><a href="ryanbernardo.html" class="readBtn"><p class="read">Read More</p></a></td>
+									
+								
+								</tr>
+							
+							</tbody>
+								
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="bordered">
+						<table cellpadding="0" class="feature">
+							<tbody>
+								
+								<tr>
+									<td rowspan="6" class="seafarer" style="width:35%;"><img src="jonathan.png" width="100%"></td>		
+									<th colspan="3" class="seafarer-name" align="left" style="width:65%;"><h3 class="name">Jonathan Alcaraz</h3></th></tr>
+								<tr>
+									<td rowspan="1" class="seafarer-country">
+									<h2 class="country">Philippines</h2>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="2" class="seafarer-rank"><h2 class="rank">Deck cadet</h2>
+									</td>
+								</tr>
+								<tr><td align="right"><a href="https://www.facebook.com/permalink.php?story_fbid=148567633505666&id=101320501563713&__xts__[0]=68.ARCPBi_KynXdwDG7H8Qk583dk62nKcv3T0OnnuaJs14sDd7H6C4bW7oXdWlcaCm3xU9YB8Bk_tgIEAe9CSY29cL0YIGR1cEKdfYgKQJ7ErV6gv407BfD9sXaT2o2F5gPBbT25Qd4KEkTiEVSOkK_iKh-0HtqSqpWQLEyDJV9mbc9D0FTxYnk06Pci9wrhUSyTEiEneycaODFppfkUSOIlHXPhvcBPGnKWp1ZZjvCta42bX3B-1PSTOIefGebrDX1iHkZmkld0mV2B9LQ3hILa7Nmprdkilw_Z66-pytlFKW0CZ4TGiBDGeAwhy7yq6FnoFRC8FokyHJy7AWvjUM3PiI&__tn__=-R" class="share">Share</a></td></tr>
+								
+								
+								<tr><td colspan="3" class="text">Jonathan is an aspiring-marine-biologist-turned-seasoned-seafarer. Having been on more than 20 trips in the Philippines already, Jonathan was preparing to embark on his first international trip when the pandemic struck and locked him in Manila.
+						At sea, Jonathan is a dedicated seafarer on deck. He courageously...</td>
+								</tr>
+								<tr>
+									<td></td><td colspan="2" align="right"><a href="jonathanalcaraz.html" class="readBtn"><p class="read">Read More</p></a></td>
+									</tr>
+							
+							</tbody>
+								
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="bordered">
+						<table cellpadding="0" class="feature">
+							<tbody>
+								<tr>
+									<td rowspan="6" class="seafarer" style="width:35%;"><img src="chad.png" width="100%"></td>		
+									<th colspan="3" class="seafarer-name" align="left" style="width:65%;"><h3 class="name">Chad Lowe Uy</h3></th></tr>
+								<tr>
+									<td rowspan="1" class="seafarer-country">
+									<h2 class="country">Philippines</h2>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="2" class="seafarer-rank"><h2 class="rank">Wiper</h2>
+									</td>
+								</tr>
+								<tr><td align="right" class="shareBtn" ><a href="https://www.facebook.com/permalink.php?story_fbid=155606186135144&id=101320501563713&__xts__[0]=68.ARDF7IxDRXhjr8IKF_LsUXpyPeNfys8KQimaWmphxa3RFe-M_PJlIPB3VxrbymPEBvN4JBcDdrZ4sGQdwsu8aw2ngG-_grTq680br1GlpQ9peM8_f5bPgsuRhZ4ZpHcA8nncb141LMKt6OhoIkM6jblMOPsQ1P1cngIrElMB1yfDmiS7HVVBhdDC-6FPGhE4fZJqmPZzR4frtPQwUxL1pZMbweaAznyOJ1_i08LcYWKNLXL5bm26cpVEVed0BFeUO7zgpfIgRwLtcpoJQ2my6k56gLO5CV8FEsG2vvudVHKYmOC8O0fB9TPBoH-WnSOSya8VtAnIB_RlMnUkwswH8p8&__tn__=-R" class="share">Share</a></td></tr>
+								
+								<tr>
+								  <td colspan="3" class="text">Chad loves his profession as engine cadet. He enjoys working on maintaining the engine and making friends with crew mates. Chad has wanted to be a seafarer since he was a toddler - it is his dream to travel around the world. Although Chad first faced homesickness and has lived through a super typhoon while... </td>
+								</tr>
+								<tr>
+									<td></td><td colspan="2" align="right"><a href="chaduy.html" class="readBtn"><p class="read">Read More</p></a></td>
+									
+								
+								</tr>
+							
+							</tbody>
+								
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="bordered">
+						<table cellpadding="0" class="feature">
+							<tbody>
+								<tr>
+									<td rowspan="6" class="seafarer" style="width:35%;"><img src="mao.png" alt="Second engineer, Philippines, Mao Bayotzin" width="100%"></td>		
+									<th colspan="3" class="seafarer-name" align="left" style="width:65%;"><h3 class="name">Mao Bayotzin</h3></th></tr>
+								<tr>
+									<td rowspan="1" class="seafarer-country">
+									<h2 class="country">Philippines</h2>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="2" class="seafarer-rank"><h2 class="rank">Second Engineer</h2>
+									</td>
+								</tr>
+								<tr><td align="right"><a href="https://www.facebook.com/permalink.php?story_fbid=143191294043300&id=101320501563713&__xts__[0]=68.ARDV_05ukbGgozvVH_7Wiy3CSCNjEve9f4hHZoNqOpJy9qNMA494m3ZslC0IlgKPomdQjkpqykVaXZUelCrc9wk0UnM4DYC1JtSakQMaOLcTM3BJifKfsGWDLDv7OO2cmADGxQAfJAiUS3ubXky7i9x0ENPkj8ZAPqvvtrCDvtcV7b4PjZqOBuPYOLMijoDr9aAPwX-4HsuluoNkh4l2XoLjsvRuVkUnkn5uO7Zx38fuGbIEdy14sY_XcIDNFAqNwqw0A6S-DpeQrWWL6braI7WOqRvyL7c7wtdaR6818jV7MvUWHvqM13flsYME03alGoa9tD1CXv5PykG4HN8VHBk&__tn__=-R" class="share">Share</a></td></tr>
+								<tr><td colspan="3" class="text"> Although Mao initially aspired to study chemical engineering in college, he enrolled in maritime courses for financial stability and learned to love his job. He shared his advice for incoming seafarers with us: Ask questions. The most important thing you will display onboard is... </td>
+								</tr>
+								<tr>
+									<td></td><td colspan="2" align="right"><a href="maobayotzin.html" class="readBtn"><p class="read">Read More</p></a></td>
+									
+								
+								</tr>
+							
+							</tbody>
+								
+						</table>
+					</td>
+				</tr>
+				
+			</tbody>
+		</table>
+		
+	</section>
+
+	</section>
+	<footer>
+		<div class="footer-background">
+			<div class="footer-row">
+				<div class="logos" style="background-color:#fffff; width:25%;">
+					<img class="footer-logo" src="logo-white.svg" width="200px"><br>
+					<a href="https://www.facebook.com/Seafair-101320501563713/" class="fa fa-facebook" target="_blank" style="font-size:20px; margin-left:15px;"></a>
+					<a href="https://www.linkedin.com/company/seafair-io/" class="fa fa-linkedin" target="_blank" style="font-size:20px;"></a>
+				</div>
+				<div class="footer-nav">
+					<div class="crew-managers" style="width:25%;">
+					<span class="nav-title">For crew managers</span>
+					<div class="nav-links">
+						<span><a class="nav-link" href="https://www.seafair.io/for-shipping-companies">Hire seafarers</a></span><br>
+						<span><a class="nav-link" href="https://www.seafair.io/how-it-works">How it works</a></span><br>
+					</div>
+				</div>
+				<div class="seafarers" style="width:25%;">
+					<span class="nav-title">For seafarers</span>
+					<div class="nav-links">
+						<span><a class="nav-link" href="https://www.seafair.io/for-seafarers">Find job</a></span><br>
+						<span><a class="nav-link" href="https://www.seafair.io/faces-of-seafair">Faces Of Seafair</a></span>
+					</div>
+					
+				</div>
+				<div class="company" style="width:25%;">
+					<span class="nav-title">Company</span>
+					<div class="nav-links">
+						<span><a class="nav-link" href="https://www.seafair.io/about-us">About us</a></span>
+					</div>
+					
+				</div></div>
+				
+		
+			</div>
+			<div class="footer-row-bottom">
+				<h7 class="rightsReserved">© 2020 Seafair Inc. All rights reserved</h7>
+				<div class="documents"><a class="agreements" target="_blank" href="https://storage.googleapis.com/seafair/privacy-policy.pdf"> Privacy Policy</a><a class="agreements" href="https://storage.googleapis.com/seafair/site-terms-of-use.pdf" target="_blank" style="margin-left:15px; margin-right:15px;">Site Terms of Use</a></div>
+				
+			</div>
+			
+		</div>
+	</footer>
+	
+</body>
+</html>
