@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+
 :root {
 	--blue: #;
 	--green: #;
@@ -13,7 +14,7 @@
 	--info: #;
 	--light: #;
 	--dark: #;
-
+	
  	--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -23,7 +24,7 @@
   box-sizing: border-box;
 }
 
-
+/* Greeting */
 header {
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -31,14 +32,71 @@ header {
 	font-size: 1.5rem;
 }
 
+/* Logo and icons */
+top {
+	top: 0px;
+	left: 0px;
+}
 
+top a {
+	float: left;
+	padding: 12px;
+}
+
+header a.logo {
+	size: 100px;
+}	
+
+/* mail and linkedin icons */
+.expand {
+	position: relative;
+	display: inline-block;
+}
+
+.expand-content {
+	display: none;
+	position: absolute;
+	text-align: center;
+	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	top: 70px;
+	min-width: 70px;
+	
+}
+
+.fa {
+	width: 0px;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.fa-linkedin {
+	color: #000;
+	padding: 0px;
+	padding-bottom:10px;
+	width: 70px;
+	height: auto;
+}
+
+.fa-envelope {
+	color: #000;
+	padding: 0px;
+	width: 70px;
+	height: auto;
+}
+
+.expand:hover .expand-content {
+	display:block;
+}
+
+/* footer at bottom of page */
 footer {
 	padding-top: 20px;
 	text-align: center;
-
+	clear: left;
 }
 
-
+/* main body*/
 .projects {
 	padding-left: 50px;
 	padding-right: 50px;
@@ -47,9 +105,12 @@ footer {
 .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8 {
 	padding-left: 30px;
 	padding-right: 20px;
+	width: 100%;
 	margin-bottom: 100px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  }
+	background-color: #fff;
+	clear: left;
+}
 
 .focus:hover {
   animation-name: focus;
@@ -58,6 +119,7 @@ footer {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+*/ focus effect */
 @keyframes focus {
     0%   {border-left: 2px solid #ffffff;}
     25%  {border-left: 3px solid #fff3ea;}
@@ -69,41 +131,41 @@ footer {
 .card-arrangement {
 	padding-left: 40px;
 	padding-right: 40px;
-
+	overflow:auto;
 }
+/* Project Details: Purpose, Tools/Software, Team  */
 .content {
 	width:50%;
-	height: auto;
+	height: 100%;
 	margin-bottom: 20px;
-	display: inline-block;
+	float: left;
 }
 
+/* "More Details:" */
 .block {
-	width: 50%;
-	heigh: auto;
-	display: inline-block;
+	width: 30%;
+	heigh: 100%;
+	margin-bottom:20px;
+	float: right;
 }
 
+/* TEXT CUSTOMIZATIONS */
 html {
 	font-family: 'Helvetica Neue', Helvetica, Arian, 'sans-serif';
 	line-height: 1.2;
 	-webkit-text-size-adjust:100%;
 	-webkit-tap-highlight-color: rgba(255, 136, 51);
-
 }
 
-body{
+body {
 	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1;
-	color: #000000;
+	color: #000;
 	text-align: left;
-	background-color: #FFFFFF;
-	background-size: cover;
 	background-color: #fff;
-  background: url("Background.png") no-repeat top center scroll;
-
+	background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -114,15 +176,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	margin-top: 1.5rem;
+	margin-top: 1.5rem;	
 }
 
 p {
 	maring-top: 0;
 	margin-bottom: 1rem;
 }
+
+/* footer text arrangement */
 .foot1 {
-	display:inline;
+	display:inline;	
 }
 
 .foot1:hover {
@@ -148,6 +212,7 @@ a {
 	background-color: transparent;
 }
 
+/* for Code Insertions */
 pre, code, kbd, samp {
 	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   	font-size: 1em;
@@ -170,7 +235,6 @@ img {
 
 projects {
 	width:100%
-
 }
 
 table {
@@ -214,6 +278,7 @@ h6 {
 	font-size: 1rem;
 }
 
+/* highlight effect */
 mark, .mark {
 	padding: 0.1rem;
 	background-color: #ff8833;
@@ -258,6 +323,7 @@ pre {
   margin-left: auto;
 }
 
+/* RESPONSIVE */
 
 @media (min-width: 576px) {
   .container {
@@ -400,3 +466,4 @@ pre {
   h3 {
     page-break-after: avoid;
   }
+}
