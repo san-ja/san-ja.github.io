@@ -27,104 +27,202 @@
 	</head>
 
 	<body>
-		<!--logo and social media icons-->
-		<div class="expand">
-			<top>
-				<a href="#"><img src="logo.PNG" width="50px" height="auto"></a>
-				<div class="expand-content">
-					<i><a  href="https://www.linkedin.com/in/sanjakirova" target="_blank" class="fa fa-linkedin" style="font-size: 35px;"></a></i><br>
-					<i><a href="mailto:sanja.kirova@columbia.edu" class="fa fa-envelope" style="font-size: 35px;"></a></i>
-				</div>
-			</top>
-		</div>
-		
 		<!--greeting-->
 		<header>
-			<h1 class="text-monospace"> Hi. I'm Sanja,</h1>
-			<p>a second-year student at Columbia University studying mechanical engineering.</p>
-		
+			<div class="jumbo"></div>
+			<div class="logo"></div>
+			<!--<div class="nav">
+				<div class="nav-tabs">
+					<ul style="list-style:none; margin:0; padding: 0;">
+						<li class="nav-tab">PROJECTS</li>
+						<li class="nav-tab">ABOUT</li>
+					</ul>
+				</div>
+			</div>-->
+			<div class="jumbo-text">
+				<div class="jumbo-text-centered">
+					<h1 style="text-shadow: 2px 2px 8px #000;">PROJECTS</h1>
+				</div>
+			</div>
 		</header>
 		
 		<!--main body-->
 		<div class="projects">
-			<h1 class="text-monospace">Projects</h1>
-			
 			<!--project 1-->
-			<div class="focus card-8">
-				<h2>Jumbo LED Screen for Games</h2>
-				<div class="card-arrangement" display="inline">
-					<div class="content">
-						<h5><u>Purpose:</u></h5> 
-						Gain technical experience of working on a team to create a hand-held video game throughout the semester for the Capstone Project in Art of Engineering.
-						The 3D design of the box shows how the components will fit together, prepares for manufacturing, and provides the opportunity to develop skills in SolidWorks.
-						<h5><u>Team:</u></h5> Timothy
-						<h5><u>Tools/Software:</u></h5> 
-						SolidWorks, Lasercutter, Ultimaker 3D Printer
+			<div class="card-8">
+				<h3>JUMBO LED GAME</h3>
+				<h2>OVERVIEW</h2>
+				<div class="card-arrangement">
+					<div class="content-left">
+						<table class="overview">
+							<tr>
+								<th>PURPOSE</th>
+								<td>Design a case for a hand-held video game ideated during the capstone project in Art of Engineering.</td>
+							</tr>
+							<tr>
+								<th>DESCRIPTION</th>
+								<td>Our "LED screen" for games allows users to play a pixelized version of Flappy Bird using a laser distance sensor.</td>
+							</tr>
+							<tr>
+								<th>TIMELINE</th>
+								<td>March-April 2020 (2 months)</td>
+							</tr>
+							<tr>
+								<th>TOOLS</th>
+								<td>SolidWorks</td>
+							</tr>
+							<tr>
+								<th>MANUFACTURING PLAN</th>
+								<td>Lasercutter, Ultimaker 3D Printer</td>
+							</tr>
+							
+						</table>
 					</div>
-					<div class="block">
-						<h5><u>More details:</u></h5>
-						<a href="https://autode.sk/38VrOAL" target="_blank">View 3D Model</a><br>	
-						<a href="https://drive.google.com/file/d/1khd28jnmFBOJjZu1EB0hPHpF5HMkuc63/view?usp=sharing" target="_blank"> Project Details </a>		
+
+					<div class="block"><a href="https://drive.google.com/file/d/1khd28jnmFBOJjZu1EB0hPHpF5HMkuc63/view?usp=sharing" target="_blank">
+						<video width="100%" height="auto" loop autoplay>
+							<source src="flappybird.mp4" type="video/mp4">
+						</video></a>
+								
+					</div>
+					
+				</div>
+			</div>	
+
+			<div class="card-3">
+				<h3>AUDIO SENSITIVE DISPLAY</h3>
+				<h2>OVERVIEW</h2>
+				<div class="card-arrangement">
+					<div class="content-left">
+						<table class="overview">
+							<tr>
+								<th>PURPOSE</th>
+								<td></td>
+								<td>Create a decibel-sensitive analog switch that outputs the result on a digital circuit of LEDs for Introduction to Electrical Engineering.</td>
+							</tr>
+							<tr>
+								<th>DESCRIPTION</th>
+								<td></td>
+								<td>The switch utilizes an op-amp to compare audio voltage to 0V. A transistor was used to integrate into the digital circuit (not pictured here).</td>
+							</tr>
+							<tr>
+								<th>TIMELINE</th>
+								<td></td>
+								<td>December 2019 (2 weeks</td>
+							</tr>
+							<tr>
+								<th>TOOLS</th>
+								<td></td>
+								<td>LTSpice, Oscilloscope, Logicly</td>
+							</tr>
+							<tr>
+								<th>OTHER CONTRIBUTORS</th>
+								<td></td>
+								<td><img src="person.png" style="width:30px;"></td>
+							</tr>
+							
+						</table>
+					</div>
+
+					<div class="block"><a href="https://drive.google.com/file/d/1-HNRWIhccSWTDQhnbkJpaEZ0tMBvn8ka/view" target="_blank">
+						<img src="circuit.png" width=100%></a>
 					</div>
 					
 				</div>
 			</div>	
 			
-			<!--project 2-->
-			<div class="focus card-3">
-				<h2>Sound-Activated Switch</h2>
-				<div class="card-arrangement">
-					<div class="content">
-					  <h5><u>Purpose:</u></h5> 
-						Decibel sensitive switch recreated using as less electronic components as possible.
-						<h5><u>Team:</u></h5> 
-						Vanessa, Justin
-						<h5><u>Tools/Software:</u></h5> 
-						LTSpice
-					</div>
-					<div class="block">
-					<h5><u>More details:</u></h5>
-					<a href="https://drive.google.com/file/d/1-HNRWIhccSWTDQhnbkJpaEZ0tMBvn8ka/view?usp=sharing" target="_blank">Schematic</a>
-					</div>
-				</div>
-			</div>
-				
 			<!--project 3-->
-			<div class="focus card-6">
-				<h2>Waterproof Tube End Cap and Assembly</h2>
+			<div class="card-6">
+				<h3>WATERPROOF COMPARTMENT</h3>
+				<h2>OVERVIEW</h2>
 				<div class="card-arrangement">
-					<div class="content">
-						<h5><u>Purpose:</u></h5> 
-						Waterproof, modular tube to house electronics of the Columbia University Robotics Club MATE ROV team.
-						<h5><u>Team:</u></h5> Delphine
-						<h5><u>Tools/Software:</u></h5> 
-						SolidWorks, Ultimaker 3D Printer, CNC Mill, Lathe
+					<div class="content-left">
+						<table class="overview">
+							<tr>
+								<th>PURPOSE</th>
+								<td></td>
+								<td>Design a waterproof, modular tube to house the electronics of the Columbia University Robotics Club MATE ROV.</td>
+							</tr>
+							<tr>
+								<th>DESCRIPTION</th>
+								<td></td>
+								<td>This compartment is made of store-bought acrylic tube and 3D printed end-caps secured by screws and made watertight using o-rings.</td>
+							</tr>
+							<tr>
+								<th>ITERATIONS</th>
+								<td></td>
+								<td>Initially, the team secured 3D printed end-caps with flanges using long headless bolts, but this caused bending between secured points and released water into the tube. Although modular, this design did not allow for frequent servicability of the electronics inside.</td>
+							</tr>
+							<tr>
+								<th>TIMELINE</th>
+								<td></td>
+								<td>January-March 2020 (3 months)</td>
+							</tr>
+							<tr>
+								<th>TOOLS</th>
+								<td></td>
+								<td>SolidWorks</td>
+							</tr>
+							<tr>
+								<th>MANUFACTURING PLAN</th>
+								<td></td>
+								<td>CNC Mill, Lathe, 3D Printer for prototyping</td>
+							</tr>
+							<tr>
+								<th>OTHER CONTRIBUTORS</th>
+								<td></td>
+								<td><img src="person.png" style="width:30px;"></td>
+							</tr>
+							
+						</table>
 					</div>
-					<div class="block">
-					<h5><u>More details:</u></h5>	
-					<a href="https://autode.sk/36MplWK" target="_blank">View Assembly</a>		
+
+					<div class="block tube">
+						<video width="80%" loop autoplay>
+							<source src="tube.mp4" type="video/mp4">
+						</video>
+								
 					</div>
+					
 				</div>
 			</div>
-			
+
 			<!--project 4-->
-			<div class="focus card-7">
-				<h2>She Can Tech Website and Newsletter</h2>
+			<div class="card-7">
+				<h3>SHE CAN TECH WEBSITE</h3>
+				<h2>OVERVIEW</h2>
 				<div class="card-arrangement">
-					<div class="content">
-						<h5><u>Purpose:</u></h5> 
-						Build and maintain a user-friendly website for parents, students, and community members for She Can Tech programs. Compile and send monthly newsletters for families containing resources, program updates, and female role models in STEM.
-						<h5><u>Tools/Software:</u></h5> 
-						HTML/CSS, Bootstrap, Adobe Dreamweaver
+					<div class="content-left">
+						<table class="overview">
+							<tr>
+								<th>PURPOSE</th>
+								<td></td>
+								<td>Build and maintain a user-friendly website for parents, students, and community members for She Can Tech programs, and compile monthly newsletters for the She Can Tech network.</td>
+							</tr>
+							<tr>
+								<th>DESCRIPTION</th>
+								<td></td>
+								<td>The She Can Tech website is made from scratch and serves as a read-only hub. Currently in development is a dynamic version of this website that centralizes the registartion, communication, and documentation process. </td>
+							</tr>
+							<tr>
+								<th>TIMELINE</th>
+								<td></td>
+								<td>Built August-November 2019 (3 months)</td>
+							</tr>
+							<tr>
+								<th>TOOLS</th>
+								<td></td>
+								<td>Adobe Dreamweaver, HTML, CSS</td>
+							</tr>
+						</table>
 					</div>
-					<div class="block">
-					<h5><u>More details:</u></h5>
-					<a href="http://shecantech.org/public_html/home/index.html" target="_blank">Visit the Website</a><br>	
-					<a href="http://newsletters.shecantech.org/december/newsletter120519.html" target="_blank">View a Newsletter</a>		
+
+					<div class="block"><a href="http://shecantech.org/" target="_blank">
+						<img src="website.png" width=85% style="margin-left:50px;"></a>
 					</div>
+					
 				</div>
 			</div>
-						
 			<!--project 5
 			<div class="focus card-5">
 				<h2>Keystone Library Remodeling</h2>
@@ -176,63 +274,148 @@
 			</div>-->
 			
 			<!--project 8-->
-			<div class="focus card-1">
-				<h2>Wheel Spacers for Formula SAE IC Vehicle</h2>
+			<div class="card-1">
+				<h3>WHEEL SPACERS</h3>
+				<h2>OVERVIEW</h2>
 				<div class="card-arrangement">
-					<div class="content">
-						<h5><u>Purpose:</u></h5> Produce a wheel spacer that minimizes weight.
-						<h5><u>Tools/Software:</u></h5> 
-						SolidWorks, CNC Mill
-						<h5><u>Team:</u></h5> 
-						Nikhil
+					<div class="content-left">
+						<table class="overview">
+							<tr>
+								<th>PURPOSE</th>
+								<td></td>
+								<td>Produce durable wheel spacers that minimize weight for the Columbia University Formula SAE IC vehicle.</td>
+							</tr>
+							<tr>
+								<th>DESCRIPTION</th>
+								<td></td>
+								<td>Spacers were developed in chronological order with the widest as a first concept on the right. The second from last spacer (with tabs for manufacturing) was chosen for its durability, ease of manufacturing, and minimal design. </td>
+							</tr>
+							<tr>
+								<th>TIMELINE</th>
+								<td></td>
+								<td>November 2019 (2 weeks)</td>
+							</tr>
+							<tr>
+								<th>TOOLS</th>
+								<td></td>
+								<td>SolidWorks</td>
+							</tr>
+							<tr>
+								<th>MANUFACTURING</th>
+								<td></td>
+								<td>CNC Mill</td>
+							</tr>
+							<tr>
+								<th>OTHER CONTRIBUTORS</th>
+								<td></td>
+								<td><img src="person.png" style="width:30px;"></td>
+							</tr>
+						</table>
 					</div>
+
 					<div class="block">
-					<h5><u>More details:</u></h5>
-						<a href="https://autode.sk/36S9c1O"  target="_blank">View Versions</a>
+						<img src="spacers.png" width=85% style="margin-left:50px;">
 					</div>
+					
 				</div>
 			</div>
 			
 			<!--project 9-->
-			<div class="focus card-1">
-				<h2>Regeneration of Energy by Excess Motion</h2>
+			<div class="card-1">
+				<h3>REGENERATIVE BRAKING</h3>
+				<h2>OVERVIEW</h2>
 				<div class="card-arrangement">
-					<div class="content">
-						<h5><u>Purpose:</u></h5> Ideate and design a friction-based braking system that converts the kinetic energy of wheels into energy used to power or charge small appliances and gadgets through an external charging circuit.
-						<h5><u>Tools/Software:</u></h5> 
-						SolidWorks
+					<div class="content-left">
+						<table class="overview">
+							<tr>
+								<th>PURPOSE</th>
+								<td></td>
+								<td>Ideate and design a friction-based braking system that converts the kinetic energy of wheels into energy used to power or charge small appliances and gadgets through an external charging circuit.</td>
+							</tr>
+							<tr>
+								<th>DESCRIPTION</th>
+								<td></td>
+								<td>While regenerative braking is common in electric vehicles, this concept explores the possibility of an add-on system for combustion bikes and mopeds in developing countries. This ratchet system engages when any pressure is applied to the brake pedal.</td>
+							</tr>
+							<tr>
+								<th>TIMELINE</th>
+								<td></td>
+								<td>July 2020 (1 month)</td>
+							</tr>
+							<tr>
+								<th>TOOLS</th>
+								<td></td>
+								<td>SolidWorks</td>
+							</tr>
+							<tr>
+								<th>MANUFACTURING PLAN</th>
+								<td></td>
+								<td>Lasercutter</td>
+							</tr>
+						</table>
 					</div>
-					<div class="block">
-					<h5><u>More details</u></h5>
-						<a href="https://drive.google.com/file/d/1bu8URYni_fP69Aar-df7u4O24SoMSvBc/view?usp=sharing"  target="_blank">Slides</a><br>
-						<a href="https://youtu.be/o5ZYmyBUvw0"  target="_blank">Watch the presentation</a>
+
+					<div class="block"><a href="https://youtu.be/o5ZYmyBUvw0" target="_blank">
+						<img src="braking.png" width=85% style="margin-left:50px;"></a>
 					</div>
+					
 				</div>
 			</div>
-			
+
 			<!--project 10-->
-			<div class="focus card-1">
-				<h2>Brake Rotor</h2>
+			<div class="card-1">
+				<h3>BRAKE ROTOR</h3>
+				<h2>OVERVIEW</h2>
 				<div class="card-arrangement">
-					<div class="content">
-						<h5><u>Purpose:</u></h5> Experiment between different rotor designs and settle on one which appropriately compromises weight and heat transfer.
-						<h5><u>Tools/Software:</u></h5> 
-						SolidWorks, ANSYS
-						<h5><u>Team:</u></h5> Zoe
+					<div class="content-left">
+						<table class="overview">
+							<tr>
+								<th>PURPOSE</th>
+								<td></td>
+								<td>Redesign the brake rotor for the rear wheels of the Formula SAE IC vehicle.</td>
+							</tr>
+							<tr>
+								<th>DESCRIPTION</th>
+								<td></td>
+								<td>Brake rotor surface patterns have a profound effect on performance. Cross drilled brake rotors were chosen instead of blank or slotted rotors for their friction and cooling characteristics.</td>
+							</tr>
+							<tr>
+								<th>TIMELINE</th>
+								<td></td>
+								<td>October 2019 (1 month)</td>
+							</tr>
+							<tr>
+								<th>TOOLS</th>
+								<td></td>
+								<td>SolidWorks, ANSYS (guided)</td>
+							</tr>
+							<tr>
+								<th>MANUFACTURING PLAN</th>
+								<td></td>
+								<td>Waterjet</td>
+							</tr>
+							<tr>
+								<th>OTHER CONTRIBUTORS</th>
+								<td></td>
+								<td><img src="person.png" style="width:30px;"></td>
+							</tr>
+						</table>
 					</div>
-					<div class="block">
-					<h5><u>More details</u></h5>
-						<a href="https://autode.sk/3nOJIcP" target="_blank">See the final design</a>
+					<div class="block"><a href="https://drive.google.com/file/d/1FIyw92kXurMz0B99Xs2041Lh-YsRKokg/view?usp=sharing" target="_blank">
+						<video width="80%" loop loadstart>
+							<source src="rotor.mp4" type="video/mp4">
+						</video></a>
+								
 					</div>
+					
 				</div>
-			</div>
-		
+			</div>		
 		</div>
 		
 		
 	<footer>
-		<p class="foot1"><a href="https://github.com/san-ja/san-ja.github.io" target="_blank"><font color="#000">code on github</font></a></p>
-		<p class="foot2"> &nbsp; <img src="logo.PNG" width="24px" height="auto" alt="The best way to predict the future is to create it. - Peter Drucker"> &nbsp; let's <a href="https://www.linkedin.com/in/sanjakirova" target="_blank"><font color="#000">connect!</font></a></p>
+		<p class="foot1">code on <a href="https://github.com/san-ja/san-ja.github.io" target="_blank" class="link-git">github</a></p>
+		<p class="foot2"> &nbsp; <img src="logo.PNG" width="24px" height="auto" alt="The best way to predict the future is to create it. - Peter Drucker"> &nbsp; let's <a href="https://www.linkedin.com/in/sanjakirova" target="_blank" class="link-linkedin">connect</a>!</p>
 		<img src="telescope.png" width="100%" alt="Millions saw the apple fall, but Newton asked 'Why'? - Bernard Baruch">
 	  </footer>
 	</body>

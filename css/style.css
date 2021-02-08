@@ -26,68 +26,85 @@
 
 /* Greeting */
 header {
-	padding-top: 100px;
-	padding-bottom: 100px;
 	text-align: center;
 	font-size: 1.5rem;
-}
-
-/* Logo and icons */
-top {
-	top: 0px;
-	left: 0px;
-}
-
-top a {
-	float: left;
-	padding: 12px;
-}
-
-header a.logo {
-	size: 100px;
-}	
-
-/* mail and linkedin icons */
-.expand {
 	position: relative;
-	display: inline-block;
+	top: 0;
+	left:0;
+	margin:0;
+	height: 10%;
 }
 
-.expand-content {
-	display: none;
-	position: absolute;
-	text-align: center;
-	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	top: 70px;
-	min-width: 70px;
+.jumbo {
+	position: relative;
+	top: 0;
+	left:0;
+	height:300px;
+	background-image: url("https://sanja.tech/jumbo-photo.jpg");
+	background-repeat: no-repeat;
+	background-position:center;
+	background-origin: content-box;
+	background-size: cover;
 	
 }
 
-.fa {
-	width: 0px;
-	text-decoration: none;
-	padding: 10px;
+.jumbo-text {
+	position:absolute;
+	text-align:center;
+	top:0;
+	left:0;
+	width:100%;
 }
 
-.fa-linkedin {
-	color: #000;
-	padding: 0px;
-	padding-bottom:10px;
-	width: 70px;
-	height: auto;
+.jumbo-text-centered {
+	position:relative;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:250px;
+	color:#fff;
 }
 
-.fa-envelope {
-	color: #000;
-	padding: 0px;
-	width: 70px;
-	height: auto;
+.nav { /*not in use*/
+	position:absolute;
+	top:0;
+	right:0;
+	width:50%;
 }
 
-.expand:hover .expand-content {
-	display:block;
+.nav-tabs { /*not in use*/
+	position:relative;
+	display:flex;
+	justify-content:flex-end;
+	top:10px;
+	right:10px;
+	width:50%;
+	margin-right:30px;
 }
+
+.nav-tab { /*not in use*/
+	display:inline;
+	border:none;
+	margin-left: 50px;
+	color: #131313;
+	font-size: 18px;
+	font-weight:600;
+}
+
+.logo {
+	position:absolute;
+	top:20px;
+	left:30px;
+	height:50px;
+	width:50px;
+	background-image:url("https://sanja.tech/logo.PNG");
+	background-repeat: no-repeat;
+	background-position:center;
+	background-origin: content-box;
+	background-size: contain;
+}
+
 
 /* footer at bottom of page */
 footer {
@@ -98,56 +115,81 @@ footer {
 
 /* main body*/
 .projects {
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-top:50px;
+	position:relative;
 }
 
 .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8 {
-	padding-left: 30px;
+	padding-left: 20px;
+	background-color:white;
 	padding-right: 20px;
+	position:relative;
+	display:flex;
+	flex-direction:column;
 	width: 100%;
 	margin-bottom: 100px;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	background-color: #fff;
 	clear: left;
 }
 
-.focus:hover {
-  animation-name: focus;
-  animation-duration: 0.15s;
-  border-left: 8px solid #ff8833;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-*/ focus effect */
-@keyframes focus {
-    0%   {border-left: 2px solid #ffffff;}
-    25%  {border-left: 3px solid #fff3ea;}
-    50%  {border-left: 4px solid #ffcfad;}
-    100% {border-left: 5px solid #ff8833;}
-}
-
-
 .card-arrangement {
-	padding-left: 40px;
-	padding-right: 40px;
-	overflow:auto;
+	padding-left:20px;
+	padding-right:20px;
+	background-color:white;
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
 }
 /* Project Details: Purpose, Tools/Software, Team  */
-.content {
-	width:50%;
-	height: 100%;
-	margin-bottom: 20px;
-	float: left;
+.content-left {
+	flex-grow:1;
+	position: relative;
+	align-self:flex-start;
+	max-width:800px;
+	z-index:1;
+}
+
+table {
+	border-collapse:separate;
+}
+
+.overview {
+	border-spacing: 20px;
+}
+
+tr {
+	border-bottom: 1px solid black;
+}
+
+th, td {
+	height:4em;
+	vertical-align: middle;
+}
+
+td {
+	text-align:right;
 }
 
 /* "More Details:" */
 .block {
-	width: 30%;
-	heigh: 100%;
+	width:600px;
+	position: relative;
+	margin-top:20px;
 	margin-bottom:20px;
-	float: right;
+	float:right;
+	right:0;
+	flex-grow:1;
+	align-self:flex-end;
 }
+
+.tube {
+	margin-top:-20px;
+	z-index:0;
+	transform: rotate(90deg);
+}
+
 
 /* TEXT CUSTOMIZATIONS */
 html {
@@ -166,6 +208,7 @@ body {
 	text-align: left;
 	background-color: #fff;
 	background-size: cover;
+	margin:0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -180,7 +223,7 @@ h1 {
 }
 
 p {
-	maring-top: 0;
+	margin-top: 0;
 	margin-bottom: 1rem;
 }
 
@@ -189,14 +232,17 @@ p {
 	display:inline;	
 }
 
-.foot1:hover {
+.link-git, .link-linkedin{
+	color: #000;
+}
+
+.link-git:hover, .link-linkedin:hover {
 	text-decoration: underline;
 }
 
 .foot2 {
 	display:inline;
 }
-
 
 b, strong {
 	font-weight: bolder;
@@ -232,6 +278,7 @@ img {
   vertical-align: middle;
   border-style: none;
 }
+
 
 projects {
 	width:100%
